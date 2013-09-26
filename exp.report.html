@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="jquery-1.10.2.min.js"> </script>
+    <script src="http://code.jquery.com/jquery-migrate-1.1.1.js"></script>
+    <script type="text/javascript" src="js/swfobject.js"></script>
+    <title>TE audit</title>
+</head>
+<body>
+    <p>Авансовый отчет - это....</p>
+    <br/>
+    <br/>
+    <p>Проверьте, что критерии соотвертвуют:</p>
+      <div  id="box1" align="left">
+        <input type="checkbox" name="option1" value="Раз">Раз
+          <label for="box1" id="c1">bububu</label>
+          <label for="box1" id="d1">mmmmmm</label>
+    <br/><input type="checkbox" name="option2" value="Два">Два
+          <label for="box1" id="c2">gugugu</label>
+          <label for="box1" id="d2">bbbbbbbb</label>
+    <br/><input type="checkbox" name="option3" value="Три">Три
+          <label for="box1" id="c3">nununu</label>
+          <label for="box1" id="d3">kkkkkkk</label>
+      </div>
+    <script id="draft" type="text/javascript">
+        $(function() {
+            $("#c1").hide()
+            $("#c2").hide()
+            $("#c3").hide()
+            $("#d1").hide()
+            $("#d2").hide()
+            $("#d3").hide()
+            $("#alrt1").hide()
+            $("#alrt2").hide()
+        })
+    </script>
+    <button id="button1" value="CHECK" name="CHECK">
+        <p>CHECK</p>
+    <div id="result"></div>
+    <script type="text/javascript">
+                $(function(){
+                        $("#button1").click(function(){
+                            if( $('input:checkbox[name=option1]').is(":checked")){
+                                $("#c1").show() }
+                            else{
+                                $("#d1").show()
+                            };
+                            if( $('input:checkbox[name=option2]').is(":checked")){
+                                $("#c2").show() }
+                            else{
+                                $("#d2").show()
+                            };
+                            if( $('input:checkbox[name=option3]').is(":checked")){
+                                $("#c3").show() }
+                            else{
+                                $("#d3").show()
+                            }
+                        });
+                });
+        $(function(){
+          $("#button1").click(function(){
+              $(this).attr("disabled", "disabled");
+              $("#second").removeAttr("disabled");
+              $("#stepb").removeAttr("disabled");});});
+        $(function(){
+              $("#button1").click(function(){
+              })});
+     </script>
+    </button>
+    <button id="second" value = "second" disabled="disabled">
+        <p>Second</p>
+        <script type="text/javascript">
+            $(function(){
+            $("#second").click(function() {
+                $("#action1").show()
+
+            })});
+        </script>
+    </button>
+        <button id="stepb" value = "stepb" disabled="disabled">
+            <p>Step back</p>
+            <script type="text/javascript">
+            $(function(){
+                $("#stepb").click(function(){
+                    $(this).attr("disabled", "disabled");
+                    $("#second").attr("disabled","disabled");
+                    $("#button1").removeAttr("disabled");
+                });})
+            $(function(){
+                $("#stepb").click(function(){
+                    $("input:checkbox").removeAttr("checked");
+                })});
+            $(function(){
+                $("#stepb").click(function(){
+                    location.reload();
+               })});
+
+            </script>
+        </button>
+
+    <script type="text/javascript">
+        $(function() {
+            $("#action1").hide()
+        })
+    </script>
+    </button>
+    <div id="action1">
+        <p>Выберете вид авансового отчета:</p>
+        <br>
+        <select id="optionsToSelect">
+           <option value=""></option>
+           <option value="hoz">Хоз расходы</option>
+           <option value="marketing">Маркетинговые расходы</option>
+           <option value="kom">Командировочне расходы</option>
+        </select>
+
+        <button id="button" value="NEXT">
+            <p>Next</p>
+            <script type="text/javascript">
+                $(function() {
+                $("#group01").hide()
+                })
+            </script>
+            <script type="text/javascript">
+                $(function(){
+                $("#button").click(function() {
+                    if ($("#optionsToSelect").val() === ""){
+                        alert("Choose option!!")
+                        }
+                    if ($("#optionsToSelect").val() === "kom"){
+                        $("#group01").show()
+                        $("#next2").show()
+                        }
+                    })
+                });
+            </script>
+        </button>
+        <div id="group01">
+            <p>Выберите направление:</p>
+            <select id="optionsToSelect1">
+                <option value=""></option>
+                <option value="rf" id="rf">РФ</option>
+                <option value="cis">СНГ</option>
+                <option value="foreing">Заграница</option>
+            </select>
+        <button id="next2" value="next2">
+            <p>NEXT</p>
+            <script type="text/javascript">
+                $(function() {
+                    $("#next2").hide()
+                })
+            </script>
+           <script tipe="text/javascript">
+                $(function (){
+                    $("#next2").click(function() {
+                     if ($("#optionsToSelect1").val() === "rf"){
+                         location.href = "file://localhost/Users/4ayka/WebstormProjects/check%20list/RF.html"
+                     }
+                       })});
+           </script>
+        </button>
+      </div>
+    </div>
+
+</body>
+</html>
