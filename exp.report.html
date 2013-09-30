@@ -23,19 +23,20 @@
       </div>
     <script id="draft" type="text/javascript">
         $(function() {
-            $("#c1").hide()
-            $("#c2").hide()
-            $("#c3").hide()
-            $("#d1").hide()
-            $("#d2").hide()
-            $("#d3").hide()
-            $("#alrt1").hide()
-            $("#alrt2").hide()
-        })
+            $("#c1").hide();
+            $("#c2").hide();
+            $("#c3").hide();
+            $("#d1").hide();
+            $("#d2").hide();
+            $("#d3").hide();
+            $("#alrt1").hide();
+            $("#alrt2").hide();
+        });
     </script>
     <button id="button1" value="CHECK" name="CHECK">
-        <p>CHECK</p>
+        CHECK
     <div id="result"></div>
+    </button>
     <script type="text/javascript">
                 $(function(){
                         $("#button1").click(function(){
@@ -63,28 +64,28 @@
               $("#stepb").removeAttr("disabled");});});
         $(function(){
               $("#button1").click(function(){
-              })});
+              });});
      </script>
-    </button>
     <button id="second" value = "second" disabled="disabled">
-        <p>Second</p>
+        Second
+    </button>
         <script type="text/javascript">
             $(function(){
             $("#second").click(function() {
                 $("#action1").show()
 
-            })});
+            });});
         </script>
-    </button>
         <button id="stepb" value = "stepb" disabled="disabled">
-            <p>Step back</p>
+            Step back
+        </button>
             <script type="text/javascript">
             $(function(){
                 $("#stepb").click(function(){
                     $(this).attr("disabled", "disabled");
                     $("#second").attr("disabled","disabled");
                     $("#button1").removeAttr("disabled");
-                });})
+                });});
             $(function(){
                 $("#stepb").click(function(){
                     $("input:checkbox").removeAttr("checked");
@@ -92,17 +93,13 @@
             $(function(){
                 $("#stepb").click(function(){
                     location.reload();
-               })});
-
+               });});
             </script>
-        </button>
-
     <script type="text/javascript">
         $(function() {
             $("#action1").hide()
-        })
+        });
     </script>
-    </button>
     <div id="action1">
         <p>Выберете вид авансового отчета:</p>
         <br>
@@ -114,26 +111,26 @@
         </select>
 
         <button id="button" value="NEXT">
-            <p>Next</p>
+            Next
+        </button>
             <script type="text/javascript">
                 $(function() {
                 $("#group01").hide()
-                })
+                });
             </script>
             <script type="text/javascript">
                 $(function(){
                 $("#button").click(function() {
                     if ($("#optionsToSelect").val() === ""){
-                        alert("Choose option!!")
+                        alert("Choose option!!");
                         }
                     if ($("#optionsToSelect").val() === "kom"){
-                        $("#group01").show()
-                        $("#next2").show()
+                        $("#group01").show();
+                        $("#next2").show();
                         }
-                    })
+                    });
                 });
             </script>
-        </button>
         <div id="group01">
             <p>Выберите направление:</p>
             <select id="optionsToSelect1">
@@ -143,11 +140,12 @@
                 <option value="foreing">Заграница</option>
             </select>
         <button id="next2" value="next2">
-            <p>NEXT</p>
+            NEXT
+        </button>
             <script type="text/javascript">
                 $(function() {
                     $("#next2").hide()
-                })
+                });
             </script>
            <script tipe="text/javascript">
                 $(function (){
@@ -155,11 +153,9 @@
                      if ($("#optionsToSelect1").val() === "rf"){
                          location.href = "file://localhost/Users/4ayka/WebstormProjects/check%20list/RF.html"
                      }
-                       })});
+                       });});
            </script>
-        </button>
       </div>
     </div>
-
 </body>
 </html>
