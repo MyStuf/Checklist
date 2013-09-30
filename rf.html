@@ -3,14 +3,16 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+    <style type="text/css"> @import "css/style.css"; </style>
     <title>RF</title>
 </head>
 <body>
-<div id="action1">
-    <p>Цель командировки:</p>
-    <br>
 
+<h1>RF</h1>
+
+<div id="action1" class="block">
     <form>
+        <h3><label for="target">Цель командировки:</label></h3>
         <select id="target">
             <option value=""></option>
             <option value="1">Участие в производственном совещании</option>
@@ -26,6 +28,7 @@
 
                     if (target.val() === "1") {
                         $("#discript").show();
+                        $(this).prop('disabled', 'disabled');
                     } else {
                         alert("Choose option!!")
                     }
@@ -34,13 +37,11 @@
                     return false;
                 });
             });
-
         </script>
     </form>
 </div>
-<br/>
 
-<div id="discript">
+<div id="discript" class="block">
 <p>Условия, которые должны быть соблюдены:</p>
 
 <div id="checkTarget1">
@@ -49,6 +50,7 @@
         <!-- а то, что ты показыавешь и прячешь нужно завернуть в div -->
         <input type="checkbox" id="targ1" name="targ1" value="Раз"/>
         <label for="targ1">Раз</label>
+
         <div id="c1">bububu</div>
         <div id="d1">mmmmmm</div>
         <br/>
@@ -81,6 +83,9 @@
         </script>
     </form>
 </div>
+
+
+
 
 <div id="buttonCheck">
     <button id="choose1" value="CHECK" name="CHECK">CHECK</button>

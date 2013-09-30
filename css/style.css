@@ -1,0 +1,84 @@
+@import "form.css";
+body {
+  background: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: helvetica neue, arial, sans-serif;
+  font-size: 82%;
+  line-height: 1.5em;
+  color: #151515;
+}
+
+input, select, button {
+  font: normal 100% helvetica neue, arial, sans-serif;
+}
+
+textarea {
+  font: normal 12px 'Menlo', 'Bitstream Vera Sans Mono', 'Courier New', 'Courier', monospace;
+}
+
+img {
+  border: none;
+}
+
+strong {
+  font-weight: bold;
+}
+
+a {
+  color: #1056c2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #1051c2;
+}
+
+h1 {
+  padding: 2em 0 0 0;
+  text-align: center;
+  margin: 0 auto;
+}
+
+h2 {
+  margin: 0;
+  padding: 3px 18px 3px 0;
+  font-weight: normal;
+  font-size: 18px;
+  letter-spacing: 0;
+}
+
+h3 {
+  font-size: 100%;
+}
+
+/* Normalize styling of form elements */
+form {
+  margin: 0;
+  padding: 0;
+}
+
+optgroup {
+  font-style: normal;
+  font-weight: bold;
+}
+
+optgroup:disabled {
+  color: #7F7F7F;
+}
+
+input[type='checkbox'], input[type='radio'] {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+input[disabled] {
+  background-color: #F9F9F9;
+  color: #999;
+  border-color: #CCC #DDD #DDD;
+}
+
+
+
