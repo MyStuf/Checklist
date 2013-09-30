@@ -1,25 +1,22 @@
+<!DOCTYPE html>
 <html>
 <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
     <title>T&E Check List Home Page</title>
 </head>
 <body>
-    <p>Good day!</br>
-    Please choose your status:</p>
-    </br>
-    </br>
-    <form>
-        <p>
-             <input TYPE="button" VALUE="Customer" ONCLICK="HomeButton()">
-                  <script>
-                    function HomeButton()
-                      {location.href="file://localhost/Users/4ayka/WebstormProjects/check%20list/customer.home.html";}
-                   </script>
-              <input TYPE="button" VALUE="AP" ONCLICK="HomeButton()">
-                  <script>
-                    function HomeButton()
-                      {location.href="file://localhost/Users/4ayka/WebstormProjects/check%20list/exp.report.html";}
-                  </script>
-        </p>
-    </form>
+<h2>Good day!</h2>
+Please choose your status:
+<br/>
+<br/>
+
+<form>
+    <p>
+        <a href="customer.home.html">Customer</a>
+        |
+        <a href="exp.report.html">AP</a>
+    </p>
+</form>
 </body>
 </html>
