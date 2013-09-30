@@ -28,7 +28,7 @@
                       $("#discript").show() }
               if ($("#target").val() === ""){
                   alert("Choose option!!")
-              }})});
+              }});});
 
       </script>
     </div>
@@ -48,19 +48,20 @@
     </div>
         <script tipe="text/javascript">
             $(function(){
-                $("#c1").hide()
-                $("#c2").hide()
-                $("#c3").hide()
-                $("#d1").hide()
-                $("#d2").hide()
-                $("#d3").hide()
-                $("#Order").hide()
-                $("#begin").hide()
+                $("#c1").hide();
+                $("#c2").hide();
+                $("#c3").hide();
+                $("#d1").hide();
+                $("#d2").hide();
+                $("#d3").hide();
+                $("#Order").hide();
+                $("#begin").hide();
             });
         </script>
     <div id="buttonCheck">
     <button id="choose1" value="CHECK" name="CHECK">
-            <p>CHECK</p>
+            CHECK
+    </button>
     <script tipe="text/javascript">
         $(function(){
             $("#choose1").click(function(){
@@ -78,17 +79,17 @@
                     $("#c3").show() }
                 else{
                     $("#d3").show()
-                }
+                };
             });
         });
         $(function(){
             $("#choose1").dblclick(function(){
-                $("#c1").hide()
-                $("#c2").hide()
-                $("#c3").hide()
-                $("#d1").hide()
-                $("#d2").hide()
-                $("#d3").hide()
+                $("#c1").hide();
+                $("#c2").hide();
+                $("#c3").hide();
+                $("#d1").hide();
+                $("#d2").hide();
+                $("#d3").hide();
                 $(function(){
                 $("#choose1").click(function(){
                 if( $('input:checkbox[name=targ11]').is(":checked")){
@@ -105,11 +106,11 @@
                     $("#c3").show() }
                 else{
                     $("#d3").show()
-                }})})})});
+                };});});});});
     </script>
-    </button>
     <button id="choose2" value="Second" name="Second" disabled="disabled">
-        <p>Second</p>
+        Second
+    </button>
      <script tipe="text/javascript">
          $(function(){
              $("#choose1").click(function(){
@@ -121,38 +122,36 @@
              $("#choose2").click(function(){
                $("#begin").show() ;
                $("#Order").show()  ;
-             })
-         })
+             });
+         });
      </script>
-    </button>
         <button id="choose3" value = "stepB" disabled="disabled">
-            <p>Step back</p>
+            Step back
+        </button>
             <script type="text/javascript">
                 $(function(){
                     $("#choose3").click(function(){
                         $(this).attr("disabled", "disabled");
                         $("#choose2").attr("disabled", "disabled", true);
                         $("#choose1").removeAttr("disabled", "disabled");
-                    });})
+                    });});
                 $(function(){
                     $("#choose3").click(function(){
                         $("input:checkbox").removeAttr("checked");
-                    })});
+                    });});
                 $(function(){
                     $("#choose3").click(function(){
                         $("input:checkbox").removeAttr("checked");
-                        $("#c1").hide()
-                        $("#c2").hide()
-                        $("#c3").hide()
-                        $("#d1").hide()
-                        $("#d2").hide()
-                        $("#d3").hide()
+                        $("#c1").hide();
+                        $("#c2").hide();
+                        $("#c3").hide();
+                        $("#d1").hide();
+                        $("#d2").hide();
+                        $("#d3").hide();
 
                     });
-                })
-
+                });
             </script>
-        </button>
     </div>
     <div id="begin">
         <p>Командировочные документы:</p>
@@ -173,23 +172,25 @@
         </div>
         <script tipe="text/javascript">
             $(function(){
-                $("#c11").hide()
-                $("#c21").hide()
-                $("#c31").hide()
-                $("#d12").hide()
-                $("#d22").hide()
-                $("#d32").hide()
-                $("#kom1").hide()
-            })
+                $("#c11").hide();
+                $("#c21").hide();
+                $("#c31").hide();
+                $("#d12").hide();
+                $("#d22").hide();
+                $("#d32").hide();
+                $("#kom1").hide();
+            });
         </script>
-        <button id="choose4" value="Check" name="Check"><p>Check</p>
+        <button id="choose4" value="Check" name="Check">
+            Check
+        </button>
            <script tipe="text/javascript">
                $(function(){
                    $("#choose4").click(function(){
                        $(this).attr("disabled", "disabled");
                        $("#choose5").removeAttr("disabled", true);
-                       $("#choose6").removeAttr("disabled")
-                       $("#choose3").attr("disabled","disabled", true)
+                       $("#choose6").removeAttr("disabled");
+                       $("#choose3").attr("disabled","disabled", true);
                    });});
                $(function(){
                          $("#choose4").click(function(){
@@ -207,16 +208,15 @@
                                $("#c31").show() }
                            else{
                                $("#d32").show()
-                               }})
+                               };});
                });
            </script>
-        </button>
         <button id="choose5" value="Second" name="Second" disabled="disabled">
-            <p>Second</p>
+            Second
             <script tipe="text/javascript">
                 $(function(){
                     $("#choose5").click(function(){
-                        $("#kom1").show()
+                        $("#kom1").show();
                         $(this).attr("disabled", "disabled");
                         $("#choose4").Attr("disabled");
                    //     $("#choose6").removeAttr("disabled", true)
@@ -224,18 +224,18 @@
             </script>
         </button>
         <button id="choose6" value = "stepB" disabled="disabled">
-            <p>Step back</p>
+            Step back
             <script type="text/javascript">
                 $(function(){
                     $("#choose6").click(function(){
                         $(this).removeAttr("disabled", "disabled");
                         $("#choose4").removeAttr("disabled");
                         $("#choose5").attr("disabled", "disabled");
-                    });})
+                    });});
                 $(function(){
                     $("#choose6").click(function(){
                         $("input:checkbox").removeAttr("checked");
-                    })});
+                    });});
                 $(function(){
                     $("#choose6").click(function(){
                         $("#c11").hide();
@@ -246,7 +246,7 @@
                         $("#d32").hide();
                         $("kom1").hide();
                     });
-                })
+                });
             </script>
         </button>
     </div>
@@ -266,23 +266,25 @@
           </div>
          <script tipe="text/javascript">
               $(function(){
-                  $("#c111").hide()
-                  $("#c211").hide()
-                  $("#c311").hide()
-                  $("#d121").hide()
-                  $("#d221").hide()
-                  $("#d321").hide()
-              })
+                  $("#c111").hide();
+                  $("#c211").hide();
+                  $("#c311").hide();
+                  $("#d121").hide();
+                  $("#d221").hide();
+                  $("#d321").hide();
+              });
           </script>
-          <button id="choose7" value="Check" name="Check"><p>Check</p>
+          <button id="choose7" value="Check" name="Check">
+              Check
+          </button>
               <script tipe="text/javascript">
                   $(function(){
                       $("#choose7").click(function(){
                           $(this).attr("disabled", "disabled");
                           $("#choose8").removeAttr("disabled", true);
-                          $("#choose9").removeAttr("disabled")
-                          $("#choose3").attr("disabled","disabled", true)
-                          $("#choose6").attr("disabled","disabled", true)
+                          $("#choose9").removeAttr("disabled");
+                          $("#choose3").attr("disabled","disabled", true);
+                          $("#choose6").attr("disabled","disabled", true);
                       });});
                   $(function(){
                       $("#choose7").click(function(){
@@ -300,12 +302,12 @@
                               $("#c311").show() }
                           else{
                               $("#d321").show()
-                          }})
+                          };});
                   });
               </script>
-          </button>
           <button id="choose8" value="Result" name="Result" disabled="disabled" onClick="showBoxes(this.form)">
-              <p>Result</p>
+              Result
+          </button>
               <script tipe="text/javascript">
                   $(function(){
                       $("#choose8").click(function(){
@@ -316,43 +318,22 @@
                   $(function(){
                       $("#choose8").click(function(){
                           $("#Zadanie").show()  ;
-                      })
-                  $(function(){
-                      $("#choose8").click(function(){
-                      function showBoxes(frm){
-                          var message = "Your chose:\n\n"
-
-                          //For each checkbox see if it has been checked, record the value.
-                          for (var i = 0; i < frm.checkTarget02.length; i++)
-                              if (frm.checkTarget02[i].checked){
-                                  message = message + frm.checkTarget02[i].value + "\n"
-                              }
-
-                          //For each radio button if it is checked get the value and break.
-                    //      for (var i = 0; i < frm.Performer.length; i++){
-                    //          if (frm.Performer[i].checked){
-                    //              message = message + "\n" + frm.Performer[i].value
-                    //              break
-                    //          }
-                    //      }
-                          $("#result1").text(message)                    }})})})
-
-
+                      });});
               </script>
-          </button>
           <button id="choose9" value = "stepB" disabled="disabled">
-              <p>Step back</p>
+              Step back
+          </button>
               <script type="text/javascript">
                   $(function(){
                       $("#choose9").click(function(){
                           $(this).removeAttr("disabled", "disabled");
                           $("#choose7").removeAttr("disabled");
                           $("#choose8").attr("disabled", "disabled");
-                      });})
+                      });});
                   $(function(){
                       $("#choose9").click(function(){
                           $("input:checkbox").removeAttr("checked");
-                      })});
+                      });});
                   $(function(){
                       $("#choose9").click(function(){
                           $("#c111").hide();
@@ -362,9 +343,8 @@
                           $("#d221").hide();
                           $("#d321").hide();
                       });
-                  })
+                  });
               </script>
-          </button>
           <br/>
           <br/>
           <br/>
