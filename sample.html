@@ -50,53 +50,106 @@
     sdfsdlfkjsfd
 
 
-    <div id="cb">
-        <input type="checkbox"/>
-        <label></label>
-        <span></span>
-        <span></span>
-    </div>
+    <!--<div id="cb">-->
+        <!--<input type="checkbox"/>-->
+        <!--<label></label>-->
+        <!--<span></span>-->
+        <!--<span></span>-->
+    <!--</div>-->
 
+    <div class="block2"></div>
+    <button id="clear">CLEAR</button>
+    <button id="check">CHECK</button>
 
     <script type="text/javascript">
         $(function(){
             Data = {
                 form1 : {
-                    bt1 : {
+                     cn1 : {
                         name : "aAAA",
                         checked : "foo",
                         unchecked : "bar"
                     },
-                    bt2 : {
-                        name : "aAAA",
-                        checked : "foo",
-                        unchecked : "bar"
+                    bnn:
+                     {
+                        name : "e333333aAAsdfsd123123123A",
+                        checked : "f124532453123oo",
+                        unchecked : "b1ewrwqre23123ar"
+                    },
+                    ddd:
+                     {
+                        name : "45665dfgsdgfaAA123123123A",
+                        checked : "fsdfsdgf123123oo",
+                        unchecked : "b1sdgfsdgf23123ar"
+                    },
+                    eee:
+                     {
+                        name : "kjhgv,mnbvaAA123123123A",
+                        checked : "f1vcvb23123oo",
+                        unchecked : "b1cvbcvb23123ar"
                     }
-                }
+        }
+
             };
 
 
-            var init = function(data) {
-                var first = $("#cb span:first");
-                var last = $("#cb span:last");
-                $("#cb span").hide();
+            var checboxis = function(dest, data) {
+                var el = $("<div><input type='checkbox'/> <label></label> <span></span> <span></span></div>");
+                dest.append(el);
+                var first = el.find("span:first");
+                var last = el.find("span:last");
+
+                first.hide();
+                last.hide();
 
                 first.text(data.checked);
                 last.text(data.unchecked);
-                $("#cb label").text(data.name);
+                el.find("label").text(data.name);
 
-                $("#cb input").change(function() {
+                el.find("input").change(function() {
+
                     if ($(this).is(":checked")) {
+                        data.userValue = first.text();
                         first.show();
                         last.hide();
                     } else {
+                        data.userValue = last.text();
                         last.show();
                         first.hide();
                     }
                 });
-            }
 
-            init(Data.form1.bt1);
+            };
+
+
+
+            var renderForm = function(data) {
+                $.each(data, function(idx, s) {
+                    checboxis($("div.block2"), s);
+                });
+
+
+                $("#clear").click( function() {
+                    $("div.block2 input[type='checkbox']:checked").click();
+                    $("div.block2 span").hide();
+                });
+
+                $("#check").click( function() {
+                    $("div.block2 ")
+                });
+            };
+
+
+            renderForm(Data.form1);
+
+            //init(Data.form1.bt1);
+            //        http://api.jquery.com/each/
+//            $("div.block").each(function(idx) {
+//
+//                init(node, Data.form1.bt2);
+//
+//                $(this).append(node);
+//            });
 
         });
     </script>
