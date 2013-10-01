@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="jquery-1.10.2.min.js"> </script>
+    <script type="text/javascript" src="jquery.base64.js"> </script>
+    <script type="text/javascript" src="data-translator.js"> </script>
+    <style type="text/css"> @import "css/style.css"; </style>
+    <title>RF</title>
+</head>
+<body>
+
+<script type="text/javascript">
+
+    $(function() {
+        var data = $.readData();
+        if (data.foo4) {
+            alert(data.foo4);
+        }
+    });
+
+    //send data
+    $(function($) {
+
+        var computeX = function () {
+            if (true) {
+                return  4;
+            } else if (true) {
+                return 5;
+            }
+            return 25;
+
+        };
+
+        var data = {
+            foo1 : $("div").text(),
+            myX : computeX(),
+            foo2 : "dddwewew",
+            foo4 : "rtree"
+        };
+
+        $.sendData("a.nextPage", data);
+    });
+
+</script>
+
+<a class="nextPage" href="sample.html">testme</a>
+
+<div id="action_dfff" class="block">
+    sdfsdlfkjsfd
+
+
+    <div id="cb">
+        <input type="checkbox"/>
+        <label></label>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <script type="text/javascript">
+        $(function(){
+            Data = {
+                form1 : {
+                    bt1 : {
+                        name : "aAAA",
+                        checked : "foo",
+                        unchecked : "bar"
+                    },
+                    bt2 : {
+                        name : "aAAA",
+                        checked : "foo",
+                        unchecked : "bar"
+                    }
+                }
+            };
+
+
+            var init = function(data) {
+                var first = $("#cb span:first");
+                var last = $("#cb span:last");
+                $("#cb span").hide();
+
+                first.text(data.checked);
+                last.text(data.unchecked);
+                $("#cb label").text(data.name);
+
+                $("#cb input").change(function() {
+                    if ($(this).is(":checked")) {
+                        first.show();
+                        last.hide();
+                    } else {
+                        last.show();
+                        first.hide();
+                    }
+                });
+            }
+
+            init(Data.form1.bt1);
+
+        });
+    </script>
+</div>
+
+
+</body>
+</html>

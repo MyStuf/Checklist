@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<h1>RF</h1>
+<h1>РФ</h1>
 
 <div id="action1" class="block">
     <form>
@@ -52,25 +52,26 @@
         <input type="checkbox" id="targ1" name="targ1" value="Раз"/>
         <label for="targ1">Раз</label>
 
-        <div id="c1">bububu</div>
-        <div id="d1">mmmmmm</div>
+        <span id="c1">bububu</span>
+        <span id="d1">mmmmmm</span>
         <br/>
 
         <input type="checkbox" id="targ12" name="targ12" value="Два"/>
         <label for="targ12">Два</label>
 
-        <div id="c2">gugugu</div>
-        <div id="d2">bbbbbbbb</div>
+        <span id="c2">gugugu</span>
+        <span id="d2">bbbbbbbb</span>
         <br/>
 
         <input type="checkbox" id="targ13" name="targ13" value="Три"/>
-        <label for="targ13">Три"</label>
+        <label for="targ13">Три</label>
 
-        <div id="c3">nununu</div>
-        <div id="d3">kkkkkkk</div>
+        <span id="c3">nununu</span>
+        <span id="d3">kkkkkkk</span>
 
         <script type="text/javascript">
             $(function () {
+
                 ///как это должно работать????
                 $("#c1").hide();
                 $("#c2").hide();
@@ -121,26 +122,6 @@
                 $("#d2").hide();
                 $("#d3").hide();
             });
-            ///зачем одно и тоже событие обработано несоклько раз? можно объединить!
-            $("#choose1").click(function () {
-                ///тут потерялись кавычки в селекторе!
-                if ($('input:checkbox[name="targ11"]').is(":checked")) {
-                    $("#c1").show()
-                } else {
-                    $("#d1").show()
-                }
-                if ($('input:checkbox[name="targ12"]').is(":checked")) {
-                    $("#c2").show()
-                } else {
-                    $("#d2").show()
-                }
-                if ($('input:checkbox[name="targ13"]').is(":checked")) {
-                    $("#c3").show()
-                } else {
-                    $("#d3").show()
-                }
-            });
-
         });
     </script>
     <button id="choose2" value="Second" name="Second" disabled="disabled">
@@ -231,20 +212,20 @@
             ///и тут повторка!
             $("#choose4").click(function () {
                 if ($('input:checkbox[name=targ01]').is(":checked")) {
-                    $("#c11").show()
+                    $("#c11").show();
                 } else {
-                    $("#d12").show()
+                    $("#d12").show();
                 }
                 if ($('input:checkbox[name=targ02]').is(":checked")) {
-                    $("#c21").show()
+                    $("#c21").show();
                 } else {
-                    $("#d22").show()
+                    $("#d22").show();
                 }
 
                 if ($('input:checkbox[name=targ03]').is(":checked")) {
-                    $("#c31").show()
+                    $("#c31").show();
                 } else {
-                    $("#d32").show()
+                    $("#d32").show();
                 }
             });
         });
@@ -386,7 +367,28 @@
     <br/>
     <br/>
 </div>
-<div id="result1"></div>
+
+
 </div>
+<div id="result1" style="float:right">
+    bla bla bla <span class="place1"></span> xxx ddd  <span class="place2"></span>;l sad;lkfjsdf;lkj
+</div>
+
+<script type="text/javascript">
+
+    $(document).on("change", function() {
+
+        if ($("#targ1").is(":checked")) {
+            $("#result1 span.place1").text("selected " + $("#c1").html());
+        } else {
+            $("#result1 span.place1").text("unselected tags:01");
+        }
+    });
+
+
+
+
+</script>
+
 </body>
 </html>
