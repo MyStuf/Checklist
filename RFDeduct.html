@@ -1,11 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="NumberOnly.js"></script>
+    <style type="text/css"> @import "css/style.css"; </style>
+    <title> RF Deductible</title>
 </head>
 <body>
+<h1>Командировка по РФ, суточные, Deductible</h1>
 
-
+<h3>Введите количество дней к командировке</h3>
+<form>
+    <input id="text" type="text" name="text" size="20" >
+    <script type="text/javascript">
+        $("#text").ForceNumericOnly();
+</script>
+</form>
+<button id="ok" value="ok" name="ok">OK</button>
+     <script type="text/javascript">
+     $(function(){
+      $("#ok").click(function(){
+        var text = $("#text").val() ;
+            if(text == 1){
+            alert("250");
+             }
+             else {
+             alert("0");
+             }
+             });
+         });
+ </script>
 
 </body>
 </html>

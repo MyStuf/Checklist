@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1416440-3d94-48da-b0a7-f45a5218b9fb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/1.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/Data_list.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/RFDeduct.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/tests/data-translator.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data-translator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mail.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/jquery.base64.js" afterPath="$PROJECT_DIR$/tests/jquery.base64.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/sample.html" afterPath="$PROJECT_DIR$/tests/sample.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exp.report.html" afterPath="$PROJECT_DIR$/exp.report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rf.html" afterPath="$PROJECT_DIR$/rf.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NumberOnly.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RFDeduct.html" afterPath="$PROJECT_DIR$/RFDeduct.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="check list.iws" />
@@ -24,13 +15,13 @@
     <file path="/AP.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1378826986622" ignored="false" />
     <file path="/exp.report.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381075784555" ignored="false" />
     <file path="/RF.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1380645369143" ignored="false" />
-    <file path="/Dummy.txt" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1380663925285" ignored="false" />
+    <file path="/Dummy.txt" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381080089873" ignored="false" />
     <file path="/rf.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381079728052" ignored="false" />
     <file path="/sample.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1380664491874" ignored="false" />
     <file path="/data-translator.js" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381077465423" ignored="false" />
     <file path="/Data_list.js" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381076698600" ignored="false" />
     <file path="/1.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381076945749" ignored="false" />
-    <file path="/RFDeduct.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381079822960" ignored="false" />
+    <file path="/RFDeduct.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381089346586" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +44,7 @@
       <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="27" selection-start="548" selection-end="548" vertical-scroll-proportion="-10.625">
+            <state line="6" column="0" selection-start="14" selection-end="265" vertical-scroll-proportion="-3.75">
               <folding />
             </state>
           </provider>
@@ -62,7 +53,7 @@
       <file leaf-file-name="rf.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rf.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="370" column="12" selection-start="12925" selection-end="12925" vertical-scroll-proportion="-15.0">
+            <state line="219" column="52" selection-start="7315" selection-end="7347" vertical-scroll-proportion="-9.375">
               <folding />
             </state>
           </provider>
@@ -71,8 +62,19 @@
       <file leaf-file-name="RFDeduct.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RFDeduct.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.049833886">
+            <state line="24" column="21" selection-start="804" selection-end="804" vertical-scroll-proportion="0.5810056">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NumberOnly.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/NumberOnly.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="6" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#156#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,7 +82,16 @@
       <file leaf-file-name="exp.report.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/exp.report.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="220" column="0" selection-start="7032" selection-end="7281" vertical-scroll-proportion="-14.875">
+            <state line="201" column="54" selection-start="6483" selection-end="6483" vertical-scroll-proportion="-5.7083335">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sample.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/tests/sample.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="163" column="0" selection-start="4417" selection-end="4417" vertical-scroll-proportion="-101.875">
               <folding />
             </state>
           </provider>
@@ -104,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/css.coffee" />
         <option value="$PROJECT_DIR$/server/server.js" />
         <option value="$PROJECT_DIR$/css/form.css" />
         <option value="$PROJECT_DIR$/css/style.css" />
@@ -119,6 +129,7 @@
         <option value="$PROJECT_DIR$/Data_list.js" />
         <option value="$PROJECT_DIR$/sample.html" />
         <option value="$PROJECT_DIR$/rf.html" />
+        <option value="$PROJECT_DIR$/NumberOnly.js" />
         <option value="$PROJECT_DIR$/RFDeduct.html" />
       </list>
     </option>
@@ -171,6 +182,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="check list" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="check list" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="check list" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tests" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -267,21 +292,25 @@
       <created>1380663927841</created>
       <updated>1380663927841</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="hidden">
+      <created>1381080097778</created>
+      <updated>1381080097778</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="22" width="1225" height="774" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.099388376" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24958402" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26622295" sideWeight="0.6727829" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26622295" sideWeight="0.90061164" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41590214" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.099388376" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.099388376" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32721713" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -358,13 +387,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/customer.home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/form.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="0" selection-start="64" selection-end="64" vertical-scroll-proportion="0.0" />
@@ -410,13 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/sample.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="0" selection-start="4411" selection-end="4411" vertical-scroll-proportion="1.1173184">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/Data_list.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="0.026737968">
@@ -440,30 +455,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/exp.report.html">
+    <entry file="file://$PROJECT_DIR$/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="220" column="0" selection-start="7032" selection-end="7281" vertical-scroll-proportion="-14.875">
+        <state line="6" column="0" selection-start="14" selection-end="265" vertical-scroll-proportion="-3.75">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
+    <entry file="file://$PROJECT_DIR$/exp.report.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="27" selection-start="548" selection-end="548" vertical-scroll-proportion="-10.625">
+        <state line="201" column="54" selection-start="6483" selection-end="6483" vertical-scroll-proportion="-5.7083335">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/sample.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="163" column="0" selection-start="4417" selection-end="4417" vertical-scroll-proportion="-101.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NumberOnly.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="6" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#156#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rf.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="370" column="12" selection-start="12925" selection-end="12925" vertical-scroll-proportion="-15.0">
+        <state line="219" column="52" selection-start="7315" selection-end="7347" vertical-scroll-proportion="-9.375">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RFDeduct.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="23" selection-end="23" vertical-scroll-proportion="0.049833886">
+        <state line="24" column="21" selection-start="804" selection-end="804" vertical-scroll-proportion="0.5810056">
           <folding />
         </state>
       </provider>
