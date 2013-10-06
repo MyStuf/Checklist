@@ -68,11 +68,9 @@
 
         <span id="c3">nununu</span>
         <span id="d3">kkkkkkk</span>
-
+    </form>
         <script type="text/javascript">
             $(function () {
-
-                ///как это должно работать????
                 $("#c1").hide();
                 $("#c2").hide();
                 $("#c3").hide();
@@ -83,12 +81,7 @@
                 $("#begin").hide();
             });
         </script>
-    </form>
 </div>
-
-
-
-
 <div id="buttonCheck">
     <button id="choose1" value="CHECK" name="CHECK">CHECK</button>
     <script type="text/javascript">
@@ -137,6 +130,10 @@
             $("#choose2").click(function () {
                 $("#begin").show();
                 $("#Order").show();
+             //   $("#deduct").hide();
+             //   $("#non-deduct").hide();
+             //   $("#text1").hide();
+
             });
         });
     </script>
@@ -197,6 +194,10 @@
             $("#d22").hide();
             $("#d32").hide();
             $("#kom1").hide();
+            $("#deduct").hide();
+            $("#non-deduct").hide();
+            $("#text1").hide();
+
         });
     </script>
     <button id="choose4" value="Check" name="Check">Check</button>
@@ -327,19 +328,17 @@
             });
         });
     </script>
-    <button id="choose8" value="Result" name="Result" disabled="disabled" onClick="showBoxes(this.form)">Result</button>
+    <button id="choose8" value="Result" name="Result" disabled="disabled">Result</button>
     <script type="text/javascript">
         $(function () {
             $("#choose8").click(function () {
+                $("#deduct").show();
+                $("#non-deduct").show();
+                $("#text1").show();
                 $(this).attr("disabled", "disabled");
                 $("#choose7").Attr("disabled");
-                //     $("#choose6").removeAttr("disabled", true)
-            });
+                 $("#choose6").removeAttr("disabled", true);
         });
-        $(function () {
-            $("#choose8").click(function () {
-                $("#Zadanie").show();
-            });
         });
     </script>
     <button id="choose9" value="stepB" disabled="disabled">Step back</button>
@@ -363,20 +362,28 @@
             });
         });
     </script>
-    <br/>
-    <br/>
-    <br/>
 </div>
+<div id="text1">Выберете решение:</div>
+<button id="deduct" value="deduct" name="deduct">Deductible</button>
+ <script type="text/javascript">
+     $("#deduct").click(function() {
+              location.href = "file://localhost/Users/4ayka/WebstormProjects/check%20list/RFDeduct.html"
+         });
+ </script>
+<button id="non-deduct" value="non-deduct" name="non-deduct">Non-deductible</button>
+<br/>
+<br/>
+<br/>
 
 
-</div>
-<div id="result1" style="float:right">
-    bla bla bla <span class="place1"></span> xxx ddd  <span class="place2"></span>;l sad;lkfjsdf;lkj
-</div>
 
-<script type="text/javascript">
+<!---
+</div><div id="result1" style="float:right">
+//    bla bla bla <span class="place1"></span> xxx ddd  <span class="place2"></span>;l sad;lkfjsdf;lkj
+//</div>
+//<script type="text/javascript">
 
-    $(document).on("change", function() {
+//    $(document).on("change", function() {
 
         if ($("#targ1").is(":checked")) {
             $("#result1 span.place1").text("selected " + $("#c1").html());
@@ -389,6 +396,8 @@
 
 
 </script>
-
+ !--->
+</div>
 </body>
+
 </html>

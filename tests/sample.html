@@ -2,10 +2,10 @@
 <html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <script type="text/javascript" src="jquery-1.10.2.min.js"> </script>
+    <script type="text/javascript" src="../jquery-1.10.2.min.js"> </script>
     <script type="text/javascript" src="jquery.base64.js"> </script>
     <script type="text/javascript" src="data-translator.js"> </script>
-    <style type="text/css"> @import "css/style.css"; </style>
+    <style type="text/css"> @import "../css/style.css"; </style>
     <title>RF</title>
 </head>
 <body>
@@ -106,6 +106,9 @@
                 last.text(data.unchecked);
                 el.find("label").text(data.name);
 
+
+                data.hideAll = function() { filst.hide(); last.hide();};
+
                 el.find("input").change(function() {
 
                     if ($(this).is(":checked")) {
@@ -124,14 +127,23 @@
 
 
             var renderForm = function(data) {
+                var root = $("<div><div></div><button class='clear'>clear</button></div>");
+
+                        root.find("button.clear");
+
                 $.each(data, function(idx, s) {
-                    checboxis($("div.block2"), s);
+                    checboxis(root.find("div:first"), s);
+
+                    s.hideAll();
+
                 });
 
 
                 $("#clear").click( function() {
                     $("div.block2 input[type='checkbox']:checked").click();
                     $("div.block2 span").hide();
+
+
                 });
 
                 $("#check").click( function() {
@@ -142,14 +154,14 @@
 
             renderForm(Data.form1);
 
-            //init(Data.form1.bt1);
-            //        http://api.jquery.com/each/
-//            $("div.block").each(function(idx) {
-//
-//                init(node, Data.form1.bt2);
-//
-//                $(this).append(node);
-//            });
+            init(Data.form1.bt1);
+                    http://api.jquery.com/each/
+            $("div.block").each(function(idx) {
+
+                init(node, Data.form1.bt2);
+
+                $(this).append(node);
+            });
 
         });
     </script>

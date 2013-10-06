@@ -4,14 +4,88 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <script type="text/javascript" src="jquery-1.10.2.min.js"> </script>
     <style type="text/css"> @import "css/style.css"; </style>
+    <script type="text/javascript" src="data_list.js"> </script>
     <title>TE audit</title>
 </head>
 <body>
     <p>Авансовый отчет - это....</p>
     <br/>
     <br/>
-
     <p>Проверьте, что критерии соотвертвуют:</p>
+    <button id="clear">CLEAR</button>
+    <button id="check">CHECK</button>
+
+    <script text="text/javascript">
+
+        var data = $.readData();
+        var checboxis = function(dest, data) {
+         var el = $("<div><input type='checkbox'> <label></label> <span></span> <span></span></div>");
+             dest.append(el);
+         var first = el.find("span:first");
+         var last = el.find("span:last");
+
+    first.hide();
+    last.hide();
+
+    first.text(data.checked);
+    last.text(data.unchecked);
+    el.find("label").text(data.name);
+
+
+    data.hideAll = function() { filst.hide(); last.hide();};
+
+    el.find("input").change(function() {
+
+    if ($(this).is(":checked")) {
+    data.userValue = first.text();
+    first.show();
+    last.hide();
+    } else {
+    data.userValue = last.text();
+    last.show();
+    first.hide();
+    }
+    });
+
+    };
+        renderForm(Data.form1);
+
+        init(Data.form1.bt1);
+                http://api.jquery.com/each/
+                    $("div.block").each(function(idx) {
+
+                        init(node, Data.form1.bt2);
+
+                        $(this).append(node);
+                    });
+        var renderForm = function(data) {
+            var root = $("<div><div></div><button class='clear'>clear</button></div>");
+
+            root.find("button.clear");
+
+            $.each(data, function(idx, s) {
+                checboxis(root.find("div:first"), s);
+
+                s.hideAll();
+
+            });
+
+
+            $("#clear").click( function() {
+                $("div.block2 input[type='checkbox']:checked").click();
+                $("div.block2 span").hide();
+
+
+            });
+
+            $("#check").click( function() {
+                $("div.block2 ")
+            });
+        };
+
+
+
+    </script>
 
       <div  id="box1">
         <input type="checkbox" name="option1" value="Раз">Раз
