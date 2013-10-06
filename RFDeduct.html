@@ -20,17 +20,24 @@
 <button id="ok" value="ok" name="ok">OK</button>
      <script type="text/javascript">
      $(function(){
+      $("#result").hide();
       $("#ok").click(function(){
         var text = $("#text").val() ;
             if(text == 1){
-            alert("250");
-             }
-             else {
-             alert("0");
-             }
+                $("#result").show();
+                $("#result span.place1").text("250");
+            } else if(text >= 2){
+                $("#result").show();
+                $("#result span.place1").text("500" * text);
+                alert("500");
+            } else {
+                alert("0");
+            }
              });
-         });
+     });
  </script>
-
+ <div id="result">
+   P0 <span class="place1"></span>
+ </div>
 </body>
 </html>

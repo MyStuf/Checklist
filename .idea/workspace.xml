@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1416440-3d94-48da-b0a7-f45a5218b9fb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/NumberOnly.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RFDeduct.html" afterPath="$PROJECT_DIR$/RFDeduct.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -15,13 +14,13 @@
     <file path="/AP.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1378826986622" ignored="false" />
     <file path="/exp.report.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381075784555" ignored="false" />
     <file path="/RF.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1380645369143" ignored="false" />
-    <file path="/Dummy.txt" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381080089873" ignored="false" />
+    <file path="/Dummy.txt" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381089523256" ignored="false" />
     <file path="/rf.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381079728052" ignored="false" />
     <file path="/sample.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1380664491874" ignored="false" />
     <file path="/data-translator.js" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381077465423" ignored="false" />
     <file path="/Data_list.js" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381076698600" ignored="false" />
     <file path="/1.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381076945749" ignored="false" />
-    <file path="/RFDeduct.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381089346586" ignored="false" />
+    <file path="/RFDeduct.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381091050772" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +52,7 @@
       <file leaf-file-name="rf.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rf.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="219" column="52" selection-start="7315" selection-end="7347" vertical-scroll-proportion="-9.375">
+            <state line="381" column="46" selection-start="13112" selection-end="13140" vertical-scroll-proportion="-13.0">
               <folding />
             </state>
           </provider>
@@ -62,19 +61,8 @@
       <file leaf-file-name="RFDeduct.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RFDeduct.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="21" selection-start="804" selection-end="804" vertical-scroll-proportion="0.5810056">
+            <state line="30" column="50" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.55307263">
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumberOnly.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/NumberOnly.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="6" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#156#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -128,8 +116,8 @@
         <option value="$PROJECT_DIR$/data-translator.js" />
         <option value="$PROJECT_DIR$/Data_list.js" />
         <option value="$PROJECT_DIR$/sample.html" />
-        <option value="$PROJECT_DIR$/rf.html" />
         <option value="$PROJECT_DIR$/NumberOnly.js" />
+        <option value="$PROJECT_DIR$/rf.html" />
         <option value="$PROJECT_DIR$/RFDeduct.html" />
       </list>
     </option>
@@ -296,7 +284,11 @@
       <created>1381080097778</created>
       <updated>1381080097778</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="hidden">
+      <created>1381089530599</created>
+      <updated>1381089530599</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -478,7 +470,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/NumberOnly.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="6" selection-start="905" selection-end="905" vertical-scroll-proportion="0.0">
+        <state line="28" column="6" selection-start="905" selection-end="905" vertical-scroll-proportion="0.5882353">
           <folding>
             <element signature="e#0#156#0" expanded="false" />
           </folding>
@@ -487,14 +479,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rf.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="219" column="52" selection-start="7315" selection-end="7347" vertical-scroll-proportion="-9.375">
+        <state line="381" column="46" selection-start="13112" selection-end="13140" vertical-scroll-proportion="-13.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RFDeduct.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="21" selection-start="804" selection-end="804" vertical-scroll-proportion="0.5810056">
+        <state line="30" column="50" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.55307263">
           <folding />
         </state>
       </provider>
