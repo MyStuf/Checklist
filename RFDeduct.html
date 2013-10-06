@@ -25,19 +25,18 @@
         var text = $("#text").val() ;
             if(text == 1){
                 $("#result").show();
-                $("#result span.place1").text("250");
+                $("#result span.place1").text("LO   " + "250   " + "PIT");
             } else if(text >= 2){
                 $("#result").show();
-                $("#result span.place1").text("500" * text);
-                alert("500");
+                $("#result span.place1").text("P0   " + "500" * text);
             } else {
-                alert("0");
+                alert("Please select the number of days!");
             }
              });
      });
  </script>
  <div id="result">
-   P0 <span class="place1"></span>
+ <h3></h3> <span class="place1"></span></h3>
  </div>
 </body>
 </html>
