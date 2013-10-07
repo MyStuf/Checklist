@@ -47,8 +47,6 @@
 
 <div id="checkTarget1">
     <form>
-        <!-- вот так нужно это делать. <label> это "надпись" по клику на которой чекбокс будет менять состояние -->
-        <!-- а то, что ты показыавешь и прячешь нужно завернуть в div -->
         <input type="checkbox" id="targ1" name="targ1" value="Раз"/>
         <label for="targ1">Раз</label>
 
@@ -87,7 +85,6 @@
     <script type="text/javascript">
         $(function () {
             $("#choose1").click(function () {
-                ///тут потерялись кавычки в селекторе!
                 if ($('input:checkbox[name="targ11"]').is(":checked")) {
                     $("#c1").show();
                 } else {

@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f1416440-3d94-48da-b0a7-f45a5218b9fb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RFDeduct.html" afterPath="$PROJECT_DIR$/RFDeduct.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/customer.home.html" afterPath="$PROJECT_DIR$/customer.home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exp.report.html" afterPath="$PROJECT_DIR$/exp.report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rf.html" afterPath="$PROJECT_DIR$/rf.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -18,13 +15,13 @@
     <file path="/AP.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1378826986622" ignored="false" />
     <file path="/exp.report.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381075784555" ignored="false" />
     <file path="/RF.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1380645369143" ignored="false" />
-    <file path="/Dummy.txt" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381091426037" ignored="false" />
+    <file path="/Dummy.txt" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381171457979" ignored="false" />
     <file path="/rf.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381079728052" ignored="false" />
     <file path="/sample.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1380664491874" ignored="false" />
     <file path="/data-translator.js" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381077465423" ignored="false" />
     <file path="/Data_list.js" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381076698600" ignored="false" />
     <file path="/1.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381076945749" ignored="false" />
-    <file path="/RFDeduct.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381171418863" ignored="false" />
+    <file path="/RFDeduct.html" changelist="f1416440-3d94-48da-b0a7-f45a5218b9fb" time="1381172146200" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +44,7 @@
       <file leaf-file-name="rf.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rf.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="63" selection-start="786" selection-end="786" vertical-scroll-proportion="-8.75">
+            <state line="106" column="0" selection-start="2643" selection-end="3302" vertical-scroll-proportion="-20.625">
               <folding />
             </state>
           </provider>
@@ -56,7 +53,7 @@
       <file leaf-file-name="RFDeduct.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RFDeduct.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="31" selection-start="1349" selection-end="1349" vertical-scroll-proportion="-0.508079">
+            <state line="152" column="5" selection-start="4913" selection-end="4913" vertical-scroll-proportion="2.2657092">
               <folding />
             </state>
           </provider>
@@ -101,10 +98,10 @@
         <option value="$PROJECT_DIR$/Data_list.js" />
         <option value="$PROJECT_DIR$/sample.html" />
         <option value="$PROJECT_DIR$/NumberOnly.js" />
-        <option value="$PROJECT_DIR$/rf.html" />
         <option value="$PROJECT_DIR$/exp.report.html" />
         <option value="$PROJECT_DIR$/customer.home.html" />
         <option value="$PROJECT_DIR$/main.html" />
+        <option value="$PROJECT_DIR$/rf.html" />
         <option value="$PROJECT_DIR$/RFDeduct.html" />
       </list>
     </option>
@@ -297,7 +294,11 @@
       <created>1381091429830</created>
       <updated>1381091429830</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="hidden">
+      <created>1381171461251</created>
+      <updated>1381171461251</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -492,14 +493,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rf.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="63" selection-start="786" selection-end="786" vertical-scroll-proportion="-8.75">
+        <state line="106" column="0" selection-start="2643" selection-end="3302" vertical-scroll-proportion="-20.625">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RFDeduct.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="31" selection-start="1349" selection-end="1349" vertical-scroll-proportion="-0.508079">
+        <state line="152" column="5" selection-start="4913" selection-end="4913" vertical-scroll-proportion="2.2657092">
           <folding />
         </state>
       </provider>
