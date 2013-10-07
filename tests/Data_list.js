@@ -8,8 +8,8 @@
  */
 
 //TODO: check variable already initialized
-Anna = {};
-Anna.Forms = {};
+if (null == Anna) var Anna = {};
+if (null == Anna.Forms) Anna.Forms = {};
 
 Anna.Forms.Data = {
     form1 : {

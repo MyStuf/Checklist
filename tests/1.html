@@ -3,8 +3,12 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <script type="text/javascript" src="../jquery-1.10.2.min.js"> </script>
+
+    <!-- вот это наши скрипты для создания формы -->
+    <script type="text/javascript" src="Data_list.js"> </script>  <!-- данные -->
+    <script type="text/javascript" src="Data_render.js"> </script> <!-- рисовалка -->
+
     <style type="text/css"> @import "../css/style.css"; </style>
-    <script type="text/javascript" src="Data_list.js"> </script>
     <title>TE audit</title>
 </head>
 <body>
@@ -12,91 +16,15 @@
 <br/>
 <br/>
 
+<!-- вот сюда мы их добавлять будем -->
 <div id="data" ></div>
 
-
+<!-- а вот это у меня ниже для примера использовано -->
 <a href="#" class="test">Показать выбраные значения</a>
 
 <script type="text/javascript">
-
-    var renderOneCheckboxSection = function(elementToInsert, checkboxData) {
-        var el = $("<div><input type='checkbox'> <label></label> <span></span> <span></span></div>");
-        elementToInsert.append(el);
-
-        var first = el.find("span:first");
-        var last = el.find("span:last");
-        var checkbox = el.find("input");
-
-        first.hide();
-        last.hide();
-
-        first.text(checkboxData.checked);
-        last.text(checkboxData.unchecked);
-        el.find("label").text(checkboxData.name);
-
-        var state = function() {
-            return checkbox.is(":checked");
-        };
-
-        return {
-            clear: function () {  first.hide(); last.hide(); checkbox.prop("disabled", null); },
-            check: function() {
-                checkbox.prop("disabled", "disabled");
-                if (state()) {
-                    first.show();
-                    last.hide();
-                } else {
-                    last.show();
-                    first.hide();
-                }
-            },
-            state : function() { return state();},
-            value: function() {
-                if (state()) {
-                    return first.text();
-                } else {
-                    return last.text();
-                }
-            }
-        }
-    };
-
-    var renderCheckboxSection = function(elementToInsert, formData) {
-        var container = $("<div class='block'></div>");
-        elementToInsert.append(container);
-
-        container.append($("<p>Проверьте, что критерии соотвертвуют:</p>"));
-        //generate data for checkboxes
-        var state = {
-            items : {},
-            clear : function() {},
-            check : function() {$.each(this.items, function(idx, item) { item.check.apply(this, arguments); })}
-        };
-        $.each(formData, function(idx, checkboxData) {
-            state.items[idx] = renderOneCheckboxSection(container, checkboxData);
-        });
-
-        container.append($("<button class='clean'>CLEAN</button>"));
-        container.append($("<button class='check'>CHECK</button>"));
-
-        container.find("button.clean").click(function() {
-            $.each(state.items, function(idx, item) { item.clear(); })
-        });
-        container.find("button.check").click(function() {
-            $.each(state.items, function(idx, item) { item.check(); })
-        });
-        return function() {
-            var result = {};
-            $.each(state.items, function(idx, item) {
-                result[idx] = item.value();
-                result[idx + "__state"] = item.state();
-            });
-            return result;
-        }
-    };
-
     /// вот так рендерить форму
-    var handle = renderCheckboxSection($("div#data"), Anna.Forms.Data.form1);
+    var handle = Anna.FormRender.renderCheckboxSection($("div#data"), Anna.Forms.Data.form1);
 
     // эта ф-я возврщает фннкцию, если ее вызвать - ты получишь все значения которые выбраны были
     // в виде обзекта, для каждгого чекбокса там будет
