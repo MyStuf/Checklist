@@ -150,7 +150,16 @@
              });
              });
      </script>
-
+    <button id="next" name="next" value="next">Next Item</button>
+    <script type="text/javascript">
+        $(function(){
+            $("#next").click(function(){
+                $("#verTipe").clone().prependTo("#clone1");
+                $("#ok1").clone().prependTo("#clone1");
+            });
+        });
+    </script>
  </div>
+<div id="clone1"></div>
 </body>
 </html>
