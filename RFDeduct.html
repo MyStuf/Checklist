@@ -9,25 +9,48 @@
 </head>
 <body>
 <h1>Командировка по РФ, суточные, Deductible</h1>
-
+<h3>Этап 1. Расчет суточных</h3>
 <h3>Введите количество дней к командировке</h3>
+
 <form>
-    <input id="text" type="text" name="text" size="20" >
+    <input id="text" type="text" name="text" size="20" />
     <script type="text/javascript">
         $("#text").ForceNumericOnly();
-</script>
+        $(document).keyup(function(event) {
+            if (event.keyCode == 13 || event.keyCode == 10) {
+                $("#text").submit();
+                var text = $("#text").val() ;
+                if(text == 1){
+                    $("#result").show();
+                    $("#choose1").show();
+                    $("#result span.place1").text("LO   " + "250   " + "PIT");
+                } else if(text >= 2){
+                    $("#result").show();
+                    $("#choose1").show();
+                    $("#result span.place1").text("P0   " + "500" * text);
+                } else {
+                    alert("Please select the number of days!");
+                }
+                return;
+            } });
+    </script>
 </form>
-<button id="ok" value="ok" name="ok">OK</button>
+<button id="ok" value="ok" name="ok" type="submit">OK</button>
      <script type="text/javascript">
-     $(function(){
+         $(function(){
       $("#result").hide();
+      $("#verTipe").hide();
+      $("#base1").hide();
+      $("#choose1").hide();
       $("#ok").click(function(){
-        var text = $("#text").val() ;
+          var text = $("#text").val() ;
             if(text == 1){
                 $("#result").show();
+                $("#choose1").show();
                 $("#result span.place1").text("LO   " + "250   " + "PIT");
             } else if(text >= 2){
                 $("#result").show();
+                $("#choose1").show();
                 $("#result span.place1").text("P0   " + "500" * text);
             } else {
                 alert("Please select the number of days!");
@@ -35,8 +58,28 @@
              });
      });
  </script>
+
  <div id="result">
- <h3></h3> <span class="place1"></span></h3>
+ <h3><span class="place1"></span></h3>
  </div>
+<button id="choose1" value="choose1" name="choose1">Choose exp</button>
+<script type="text/javascript">
+    $(function(){
+       $("#choose1").click(function(){
+           $("#verTipe").show();
+           $("#base1").show();
+       });
+    });
+</script>
+<form id="base1">
+    <h3>Вид расхода:</h3>
+    <select id="verTipe">
+        <option value=""></option>
+        <option value="1">Билеты</option>
+        <option value="2">Проживание</option>
+        <option value="3">Трансфер</option>
+    </select>
+</form>
+
 </body>
 </html>
