@@ -14,6 +14,9 @@
 
 <div id="data" ></div>
 
+
+<a href="#" class="test">Показать выбраные значения</a>
+
 <script type="text/javascript">
 
     var renderOneCheckboxSection = function(elementToInsert, checkboxData) {
@@ -47,6 +50,7 @@
                     first.hide();
                 }
             },
+            state : function() { return state();},
             value: function() {
                 if (state()) {
                     return first.text();
@@ -81,9 +85,34 @@
         container.find("button.check").click(function() {
             $.each(state.items, function(idx, item) { item.check(); })
         });
+        return function() {
+            var result = {};
+            $.each(state.items, function(idx, item) {
+                result[idx] = item.value();
+                result[idx + "__state"] = item.state();
+            });
+            return result;
+        }
     };
 
-    renderCheckboxSection($("div#data"), Anna.Forms.Data.form1);
+    /// вот так рендерить форму
+    var handle = renderCheckboxSection($("div#data"), Anna.Forms.Data.form1);
+
+    // эта ф-я возврщает фннкцию, если ее вызвать - ты получишь все значения которые выбраны были
+    // в виде обзекта, для каждгого чекбокса там будет
+    // {
+    //    id_of_checkbox_from_data : selected option text value,
+    //    id_of_checkbox_from_data__state : true|false
+    // }
+    //
+
+    //вот тестовый пример того, как это работает
+    $("a.test").click(function(){
+        alert(JSON.stringify(handle()));
+        return false;
+    });
+
+
 
 </script>
 
