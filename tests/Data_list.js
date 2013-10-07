@@ -4,9 +4,14 @@
  * Date: 03.10.13
  * Time: 18:52
  * To change this template use File | Settings | File Templates.
+ //function() {.. } () приведет к тому, что ничего не будет доступно снаружи!
  */
-$(function(){
-Data = {
+
+//TODO: check variable already initialized
+Anna = {};
+Anna.Forms = {};
+
+Anna.Forms.Data = {
     form1 : {
         a1 : {
             name : "aAAA",
@@ -33,5 +38,4 @@ Data = {
         }
     }
 };
-});
 

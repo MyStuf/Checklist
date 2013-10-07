@@ -11,79 +11,79 @@
 <p>Авансовый отчет - это....</p>
 <br/>
 <br/>
-<p>Проверьте, что критерии соотвертвуют:</p>
-<button id="clear">CLEAR</button>
-<button id="check">CHECK</button>
+
+<div id="data" ></div>
 
 <script type="text/javascript">
 
-    var data = $.readData();
-    var checboxis = function(dest, data) {
+    var renderOneCheckboxSection = function(elementToInsert, checkboxData) {
         var el = $("<div><input type='checkbox'> <label></label> <span></span> <span></span></div>");
-        dest.append(el);
+        elementToInsert.append(el);
+
         var first = el.find("span:first");
         var last = el.find("span:last");
+        var checkbox = el.find("input");
 
         first.hide();
         last.hide();
 
-        first.text(data.checked);
-        last.text(data.unchecked);
-        el.find("label").text(data.name);
+        first.text(checkboxData.checked);
+        last.text(checkboxData.unchecked);
+        el.find("label").text(checkboxData.name);
 
+        var state = function() {
+            return checkbox.is(":checked");
+        };
 
-        data.hideAll = function() { filst.hide(); last.hide();};
-
-        el.find("input").change(function() {
-
-            if ($(this).is(":checked")) {
-                data.userValue = first.text();
-                first.show();
-                last.hide();
-            } else {
-                data.userValue = last.text();
-                last.show();
-                first.hide();
+        return {
+            clear: function () {  first.hide(); last.hide(); checkbox.prop("disabled", null); },
+            check: function() {
+                checkbox.prop("disabled", "disabled");
+                if (state()) {
+                    first.show();
+                    last.hide();
+                } else {
+                    last.show();
+                    first.hide();
+                }
+            },
+            value: function() {
+                if (state()) {
+                    return first.text();
+                } else {
+                    return last.text();
+                }
             }
+        }
+    };
+
+    var renderCheckboxSection = function(elementToInsert, formData) {
+        var container = $("<div class='block'></div>");
+        elementToInsert.append(container);
+
+        container.append($("<p>Проверьте, что критерии соотвертвуют:</p>"));
+        //generate data for checkboxes
+        var state = {
+            items : {},
+            clear : function() {},
+            check : function() {$.each(this.items, function(idx, item) { item.check.apply(this, arguments); })}
+        };
+        $.each(formData, function(idx, checkboxData) {
+            state.items[idx] = renderOneCheckboxSection(container, checkboxData);
         });
 
-    }
-    .renderForm(Data.form1);
+        container.append($("<button class='clean'>CLEAN</button>"));
+        container.append($("<button class='check'>CHECK</button>"));
 
-    init(Data.form1.bt1);
-   // http://api.jquery.com/each/
-            $("div.block").each(function(idx) {
-
-                init(node, Data.form1.a1);
-
-                $(this).append(node);
-            });
-    var renderForm = function(data) {
-        var root = $("<div><div></div><button class='clear'>clear</button></div>");
-
-        root.find("button.clear");
-
-        $.each(data, function(idx, s) {
-            checboxis(root.find("div:first"), s);
-
-            s.hideAll();
-
+        container.find("button.clean").click(function() {
+            $.each(state.items, function(idx, item) { item.clear(); })
         });
-
-
-        $("#clear").click( function() {
-            $("div.block2 input[type='checkbox']:checked").click();
-            $("div.block2 span").hide();
-
-
-        });
-
-        $("#check").click( function() {
-            $("div.block2 ")
+        container.find("button.check").click(function() {
+            $.each(state.items, function(idx, item) { item.check(); })
         });
     };
 
-
+    renderCheckboxSection($("div#data"), Anna.Forms.Data.form1);
 
 </script>
 
