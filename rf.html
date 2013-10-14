@@ -53,19 +53,12 @@
 <h3>Условия, которые должны быть соблюдены:</h3>
 
 <div id="checkTarget1"></div>
-    <button id="next" value="Second" name="Second" class="next" disabled="disabled">Second</button>
     <script type="text/javascript">
         $(function () {
             $("#choose1").click(function () {
                 $(this).attr("disabled", "disabled");
                 $("#next").removeAttr("disabled");
                 $("#choose3").removeAttr("disabled")
-            });
-            $("#next").click(function () {
-                $("#begin").show();
-                $("#Order").show();
-                $("#checkTarget2").show();
-                $("#choose5").show();
             });
         });
     </script>
@@ -88,29 +81,11 @@
             $("#per").hide();
         });
     </script>
-    <button id="choose5" value="Second" name="Second" disabled="disabled">Second</button>
-        <script type="text/javascript">
-            $(function () {
-                $("#choose5").click(function () {
-                    $("#kom1").show();
-                });
-            });
-        </script>
 </div>
 <div id="kom1">
     <h3>Командировочное удостоверение - это .......</h3>
     <h3>Условия:</h3>
     <div id="checkTarget02"></div>
-    <button id="choose8" value="Result" name="Result" disabled="disabled">Result</button>
-    <script type="text/javascript">
-        $(function () {
-            $("#choose8").click(function () {
-                $("#deduct").show();
-                $("#non-deduct").show();
-                $("#text1").show();
-        });
-        });
-    </script>
 </div>
 <div id="text1">Выберете решение:</div>
 <button id="deduct" value="deduct" name="deduct">Deductible</button>
@@ -165,6 +140,24 @@
           var handle_1 = Anna.FormRender.renderCheckboxSection($("div#checkTarget1"), Anna.Forms.Data.form3);
           var handle_2 = Anna.FormRender.renderCheckboxSection($("div#checkTarget02"), Anna.Forms.Data.form5);
           var handle_3 = Anna.FormRender.renderCheckboxSection($("div#checkTarget2"), Anna.Forms.Data.form4);
+
+            handle_1.nextClick(function() {
+                    $("#begin").show();
+                    $("#Order").show();
+                    $("#checkTarget2").show();
+                    $("#choose5").show();
+            });
+
+            handle_2.nextClick(function () {
+                $("#deduct").show();
+                $("#non-deduct").show();
+                $("#text1").show();
+            });
+
+            handle_3.nextClick(function(){
+                $("#kom1").show();
+            });
+
             ///обработчик клика по ссылке нужно регистрировать _1_ раз,
             ///иначе он тебе замучает сообщениями
             $("a.test").click(function(){
