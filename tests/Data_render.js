@@ -58,24 +58,40 @@ Anna.FormRender = {
           state.items[idx] = Anna.FormRender.renderOneCheckboxSection(container, checkboxData);
       });
 
-      container.append($("<button class='clean' disabled>CLEAN</button>"));
+      container.append($("<button class='clean' disabled='disabled'>CLEAN</button>"));
       container.append($("<button class='check'>CHECK</button>"));
 
       container.find("button.clean").click(function() {
           $("#action1").hide();
           $.each(state.items, function(idx, item) { item.clear(); });
-           $("button.check").removeAttr("disabled", true);
-           $("button.next").attr("disabled", true);
-           $("#choose5").attr("disabled", true);
-          $("#choose8").attr("disabled", true);
+        //тут нельзя использовать $, т.к. он будет искать по _всей_ странице
+        //Нужно все искать внутри контейнет 'container', как написано выше
+        container.find("button.check").removeAttr("disabled", true);
+
+        ///что это за <button ... class="next"> ... такого нету в шаблоне,
+        ///скорее всего работать оно тут не будет правильно
+        ///container.find("button.next").attr("disabled", true);
+//          не понятно, как это может работат тут, если этих
+//          элементов нету в шаблоне выше
+//           $("#choose5").attr("disabled", true);
+//          $("#choose8").attr("disabled", true);
       });
       container.find("button.check").click(function() {
           $.each(state.items, function(idx, item) { item.check(); });
+
           $(this).attr("disabled", "disabled");
-              $("button.next").removeAttr("disabled");
-              $("button.clean").removeAttr("disabled");
-              $("#choose5").removeAttr("disabled");
-              $("#choose8").removeAttr("disabled");
+        //тут нельзя использовать $, т.к. он будет искать по _всей_ странице
+        //Нужно все искать внутри контейнет 'container', как написано выше
+
+        ///что это за <button ... class="next"> ... такого нету в шаблоне,
+        ///скорее всего работать оно тут не будет правильно
+        ///container.find("button.next").removeAttr("disabled");
+
+        container.find("button.clean").removeAttr("disabled");
+//          не понятно, как это может работат тут, если этих
+//          элементов нету в шаблоне выше
+//          $("#choose5").removeAttr("disabled");
+//          $("#choose8").removeAttr("disabled");
           });
       return function() {
           var result = {};
