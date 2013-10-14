@@ -22,7 +22,49 @@
             <option value="3">Участие в семинаре</option>
         </select>
         <button id="targetButton">Select</button>
-        <script type="text/javascript">
+</div>
+
+<div id="discript" class="block">
+<h3>Условия, которые должны быть соблюдены:</h3>
+
+<div id="checkTarget1"></div>
+
+</div>
+<div id="begin">
+    <p>Командировочные документы:</p>
+</div>
+<div id="Order">
+    <h3>Приказ - это .......</h3>
+    <h3>Условия:</h3>
+    <div id="checkTarget2"></div>
+</div>
+<div id="kom1">
+    <h3>Командировочное удостоверение - это .......</h3>
+    <h3>Условия:</h3>
+    <div id="checkTarget02"></div>
+</div>
+<div id="text1">Выберете решение:</div>
+<button id="deduct" value="deduct" name="deduct">Deductible</button>
+<button id="non-deduct" value="non-deduct" name="non-deduct">Non-deductible</button>
+<div id="text2">Каким образом сотрудник отчитывается:</div>
+    <button id="per">Per Diem</button>
+    <button id="fakt">Expenses</button>
+<br/>
+<br/>
+<br/>
+<!--
+ потеренный закрывающий </div>
+ похоже чтото не то со вложенностью элементов.
+ стоит это проверить!
+ -->
+
+
+<a href="#" class="test">Показать выбраные значения</a>
+
+<script type="text/javascript">
+        ///тут мы радостно забыли $(function() { ... в итоге половина их всего этого просто не будет работать.
+        $(function() {
+
             //вот тут чтото уж слижком все сложно написано....
             $(function () {
                 $("#discript").hide();
@@ -46,97 +88,52 @@
                     return false;
                 });
             });
-        </script>
-</div>
 
-<div id="discript" class="block">
-<h3>Условия, которые должны быть соблюдены:</h3>
-
-<div id="checkTarget1"></div>
-    <script type="text/javascript">
-        $(function () {
-            $("#choose1").click(function () {
-                $(this).attr("disabled", "disabled");
-                $("#next").removeAttr("disabled");
-                $("#choose3").removeAttr("disabled")
+            $(function () {
+                $("#choose1").click(function () {
+                    $(this).attr("disabled", "disabled");
+                    $("#next").removeAttr("disabled");
+                    $("#choose3").removeAttr("disabled")
+                });
             });
-        });
-    </script>
-</div>
-<div id="begin">
-    <p>Командировочные документы:</p>
-</div>
-<div id="Order">
-    <h3>Приказ - это .......</h3>
-    <h3>Условия:</h3>
-    <div id="checkTarget2"></div>
-    <script type="text/javascript">
-        $(function () {
-            $("#kom1").hide();
-            $("#deduct").hide();
-            $("#non-deduct").hide();
-            $("#text1").hide();
-            $("#text2").hide();
-            $("#fakt").hide();
-            $("#per").hide();
-        });
-    </script>
-</div>
-<div id="kom1">
-    <h3>Командировочное удостоверение - это .......</h3>
-    <h3>Условия:</h3>
-    <div id="checkTarget02"></div>
-</div>
-<div id="text1">Выберете решение:</div>
-<button id="deduct" value="deduct" name="deduct">Deductible</button>
- <script type="text/javascript">
-     $("#deduct").click(function() {
-         $("#fakt").show();
-         $("#per").show();
-         $("#text2").show();
-         });
- </script>
-<button id="non-deduct" value="non-deduct" name="non-deduct">Non-deductible</button>
-    <script type="text/javascript">
-        $(function(){
-            $("#non-deduct").click(function(){
-                 alert("sorry this page under construction!!");
-        });
+
+
+            $(function () {
+                $("#kom1").hide();
+                $("#deduct").hide();
+                $("#non-deduct").hide();
+                $("#text1").hide();
+                $("#text2").hide();
+                $("#fakt").hide();
+                $("#per").hide();
             });
-    </script>
-<div id="text2">Каким образом сотрудник отчитывается:</div>
-    <button id="per">Per Diem</button>
-    <script type="text/javascript">
-        $(function(){
-            $("#per").click(function(){
-        location.href = "RFDeduct.html"
-        });
+
+            $("#deduct").click(function() {
+                $("#fakt").show();
+                $("#per").show();
+                $("#text2").show();
+                });
+
+
+            $(function(){
+                $("#non-deduct").click(function(){
+                     alert("sorry this page under construction!!");
             });
-    </script>
-    <button id="fakt">Expenses</button>
-<script type="text/javascript">
-    $(function(){
-        $("#fact").click(function(){
-            alert("sorry this page under construction!!");
-        });
-    });
-</script>
+                });
+            $(function(){
+                $("#per").click(function(){
+            location.href = "RFDeduct.html"
+            });
+                });
 
-<br/>
-<br/>
-<br/>
-<!--
- потеренный закрывающий </div>
- похоже чтото не то со вложенностью элементов.
- стоит это проверить!
- -->
+            $(function(){
+                $("#fact").click(function(){
+                    alert("sorry this page under construction!!");
+                });
+            });
 
 
-<a href="#" class="test">Показать выбраные значения</a>
 
-<script type="text/javascript">
-        ///тут мы радостно забыли $(function() { ... в итоге половина их всего этого просто не будет работать.
-        $(function() {
           var handle_1 = Anna.FormRender.renderCheckboxSection($("div#checkTarget1"), Anna.Forms.Data.form3);
           var handle_2 = Anna.FormRender.renderCheckboxSection($("div#checkTarget02"), Anna.Forms.Data.form5);
           var handle_3 = Anna.FormRender.renderCheckboxSection($("div#checkTarget2"), Anna.Forms.Data.form4);
