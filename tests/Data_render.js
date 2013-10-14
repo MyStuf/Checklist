@@ -58,16 +58,25 @@ Anna.FormRender = {
           state.items[idx] = Anna.FormRender.renderOneCheckboxSection(container, checkboxData);
       });
 
-      container.append($("<button class='clean'>CLEAN</button>"));
+      container.append($("<button class='clean' disabled>CLEAN</button>"));
       container.append($("<button class='check'>CHECK</button>"));
-      container.append($("<button class='next'>NEXT</button>"));
 
       container.find("button.clean").click(function() {
-          $.each(state.items, function(idx, item) { item.clear(); })
+          $("#action1").hide();
+          $.each(state.items, function(idx, item) { item.clear(); });
+           $("button.check").removeAttr("disabled", true);
+           $("button.next").attr("disabled", true);
+           $("#choose5").attr("disabled", true);
+          $("#choose8").attr("disabled", true);
       });
       container.find("button.check").click(function() {
-          $.each(state.items, function(idx, item) { item.check(); })
-      });
+          $.each(state.items, function(idx, item) { item.check(); });
+          $(this).attr("disabled", "disabled");
+              $("button.next").removeAttr("disabled");
+              $("button.clean").removeAttr("disabled");
+              $("#choose5").removeAttr("disabled");
+              $("#choose8").removeAttr("disabled");
+          });
       return function() {
           var result = {};
           $.each(state.items, function(idx, item) {
@@ -76,19 +85,6 @@ Anna.FormRender = {
           });
           return result;
       }
-  },
-    DropDownList : function(elementToInsert, DropDownData) {
-        var e = $("<div><select> <option></option> <option></option> </select> </div>");
-        elementToInsert.append(e);
-
-        DropDownData.DataSource = Anna.Forms.Data;
-        DropDownData.DataTextField = "name";
-        DropDownData.DataVialueField = "value";
-        DropDownData.dataBind();
-        DropDownData.items.add(0, new elementToInsert("Выберите...", ""));
-        $.each(DropDownData, function(idx) {
-        select.items[idx] = Anna.FormRender.DropDownList(DropDownData);
-    });
-    }
+  }
 
 };

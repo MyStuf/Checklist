@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <script type="text/javascript" src="jquery-1.10.2.min.js"> </script>
@@ -13,69 +13,64 @@
     <p>Авансовый отчет - это....</p>
     <br/>
     <br/>
-    <div id="data" ></div>
+    <div id="data" >
     <script type="text/javascript">
         var handle = Anna.FormRender.renderCheckboxSection($("div#data"), Anna.Forms.Data.form2);
-        var handle = Anna.FormRender.DropDownList($("div#data"), Anna.Forms.Data.form3);
-
         $("a.test").click(function(){
             alert(JSON.stringify(handle()));
             return false;
         });
-        $("next").click(function(){
-            alert(JSON.stringify(handle()));
-            return false;
+    </script>
+    <script type="text/javascript">
+        $(function() {
+            $("#action1").hide();
+            $("#action2").hide();
+            $("#next2").hide();
+            $("#buttonTarget").hide();
         });
     </script>
 
+    <button class='next' disabled="disabled" >NEXT</button>
+     <script type="text/javascript">
+      $(function(){
+       $("button.next").click(function() {
+       $("#buttonTarget").show();
+       $("#action1").show();
+       });
+      });
 
-
-        <!---
-
-
-    <button id="second" value = "second" disabled="disabled">Second</button>
-        <script type="text/javascript">
-            $(function(){
-            $("#second").click(function() {
-                $("#action1").show();
-
-            });
-            });
-        </script>
+     </script>
+    </div>
 
     <div id="action1">
         <p>Выберете вид авансового отчета:</p>
         <br>
       <form>
-        <select id="optionsToSelect">
+        <select id="DropDownTarget">
            <option value=""></option>
            <option value="hoz">Хоз расходы</option>
            <option value="marketing">Маркетинговые расходы</option>
            <option value="kom">Командировочне расходы</option>
         </select>
-      </form>
-    </div>
-
-        <button id="button" value="NEXT">Next</button>
-
+    <button id="buttonTarget" value="NEXT">Next</button>
             <script type="text/javascript">
-                $(function() {
-                $("#group01").hide();
-                $("#button").click(function() {
-                    if ($("#optionsToSelect").val() === ""){
+                $("#buttonTarget").click(function() {
+                    if ($("#DropDownTarget").val() === ""){
                         alert("Choose option!!");
-                        }
-                    if ($("#optionsToSelect").val() === "kom"){
-                        $("#group01").show();
+
+                    } else if ($("#DropDownTarget").val() === "kom"){
+                        $("#action2").show();
                         $("#next2").show();
                         }
-                    });
+
                 });
             </script>
-        <div id="group01">
+      </form>
+    </div>
+    <div id="action2">
             <p>Выберите направление:</p>
             <form>
-            <select id="optionsToSelect1">
+            <select id="DropDownCountry">
                 <option value=""></option>
                 <option value="rf" id="rf">РФ</option>
                 <option value="cis">СНГ</option>
@@ -88,15 +83,13 @@
                     $("#next2").hide();
                     $("#next2").click(function() {
                      if ($("#optionsToSelect1").val() === "rf"){
-                         location.href = "RF.html"
+                         location.href = "rf.html"
                      }
                        });
                 });
            </script>
-      </div>
     </div>
 
-    !--->
     <a href="#" class="test">Показать выбраные значения</a>
 
 </body>

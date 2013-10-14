@@ -4,14 +4,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
     <style type="text/css"> @import "css/style.css"; </style>
+    <script type="text/javascript" src="tests/Data_list.js"> </script>
+    <script type="text/javascript" src="tests/Data_render.js"> </script>
     <title>RF</title>
 </head>
 <body>
 
 <h1>РФ</h1>
 
-<div id="action1" class="block">
-    <form>
+<div id="action3" class="block">
         <h3><label for="target">Цель командировки:</label></h3>
         <!-- можно сделать 3 кнопки - так будет удобнне -->
         <select id="target">
@@ -24,139 +25,53 @@
         <script type="text/javascript">
             $(function () {
                 $("#discript").hide();
+                $("#begin").hide();
+                $("#Order").hide();
+                $("#next").hide();
+                $("#checkTarget1").hide();
+                $("#checkTarget2").hide();
+                $("#choose5").hide();
                 $("#targetButton").click(function () {
                     var target = $("#target");
 
                     if (target.val() === "1") {
                         $("#discript").show();
+                        $("#next").show();
+                        $("#checkTarget1").show();
                         $(this).prop('disabled', 'disabled');
                     } else {
                         alert("Choose option!!")
                     }
-
-
                     return false;
                 });
             });
         </script>
-    </form>
 </div>
 
 <div id="discript" class="block">
-<p>Условия, которые должны быть соблюдены:</p>
+<h3>Условия, которые должны быть соблюдены:</h3>
 
-<div id="checkTarget1">
-    <form>
-        <input type="checkbox" id="targ1" name="targ1" value="Раз"/>
-        <label for="targ1">Раз</label>
-
-        <span id="c1">bububu</span>
-        <span id="d1">mmmmmm</span>
-        <br/>
-
-        <input type="checkbox" id="targ12" name="targ12" value="Два"/>
-        <label for="targ12">Два</label>
-
-        <span id="c2">gugugu</span>
-        <span id="d2">bbbbbbbb</span>
-        <br/>
-
-        <input type="checkbox" id="targ13" name="targ13" value="Три"/>
-        <label for="targ13">Три</label>
-
-        <span id="c3">nununu</span>
-        <span id="d3">kkkkkkk</span>
-    </form>
-        <script type="text/javascript">
-            $(function () {
-                $("#c1").hide();
-                $("#c2").hide();
-                $("#c3").hide();
-                $("#d1").hide();
-                $("#d2").hide();
-                $("#d3").hide();
-                $("#Order").hide();
-                $("#begin").hide();
-            });
-        </script>
-</div>
-<div id="buttonCheck">
-    <button id="choose1" value="CHECK" name="CHECK">CHECK</button>
+<div id="checkTarget1"></div>
     <script type="text/javascript">
-        $(function () {
-            $("#choose1").click(function () {
-                if ($('input:checkbox[name="targ11"]').is(":checked")) {
-                    $("#c1").show();
-                } else {
-                    $("#d1").show();
-                }
-
-                if ($('input:checkbox[name="targ12"]').is(":checked")) {
-                    $("#c2").show();
-                } else {
-                    $("#d2").show();
-                }
-
-                if ($('input:checkbox[name="targ13"]').is(":checked")) {
-                    $("#c3").show();
-                } else {
-                    $("#d3").show();
-                }
-            });
-
-            $("#choose1").dblclick(function () {
-                $("#c1").hide();
-                $("#c2").hide();
-                $("#c3").hide();
-                $("#d1").hide();
-                $("#d2").hide();
-                $("#d3").hide();
-            });
+        var handle = Anna.FormRender.renderCheckboxSection($("div#checkTarget1"), Anna.Forms.Data.form3);
+        $("a.test").click(function(){
+            alert(JSON.stringify(handle()));
+            return false;
         });
-    </script>
-    <button id="choose2" value="Second" name="Second" disabled="disabled">
-        Second
-    </button>
+        </script>
+    <button id="next" value="Second" name="Second" class="next" disabled="disabled">Second</button>
     <script type="text/javascript">
         $(function () {
             $("#choose1").click(function () {
                 $(this).attr("disabled", "disabled");
-                $("#choose2").removeAttr("disabled");
+                $("#next").removeAttr("disabled");
                 $("#choose3").removeAttr("disabled")
             });
-            $("#choose2").click(function () {
+            $("#next").click(function () {
                 $("#begin").show();
                 $("#Order").show();
-             //   $("#deduct").hide();
-             //   $("#non-deduct").hide();
-             //   $("#text1").hide();
-
-            });
-        });
-    </script>
-    <button id="choose3" value="stepB" disabled="disabled">Step back</button>
-
-    <script type="text/javascript">
-        $(function () {
-            $("#choose3").click(function () {
-                $(this).attr("disabled", "disabled");
-                $("#choose2").attr("disabled", "disabled", true);
-                $("#choose1").removeAttr("disabled", "disabled");
-            });
-
-            $("#choose3").click(function () {
-                $("input:checkbox").removeAttr("checked");
-            });
-
-            $("#choose3").click(function () {
-                $("input:checkbox").removeAttr("checked");
-                $("#c1").hide();
-                $("#c2").hide();
-                $("#c3").hide();
-                $("#d1").hide();
-                $("#d2").hide();
-                $("#d3").hide();
-
+                $("#checkTarget2").show();
+                $("#choose5").show();
             });
         });
     </script>
@@ -165,163 +80,46 @@
     <p>Командировочные документы:</p>
 </div>
 <div id="Order">
-    <p>Приказ - это .......</p>
-
-    <p>Условия:</p>
-
+    <h3>Приказ - это .......</h3>
+    <h3>Условия:</h3>
     <div id="checkTarget2">
-        <form>
-            <input type="checkbox" id="targ01" name="targ01" value="Раз">Раз
-            <label for="targ01" id="c11">bububu</label>
-            <label for="targ01" id="d12">mmmmmm</label>
-            <br/><input type="checkbox" id="targ02" name="targ02" value="Два">Два
-            <label for="targ02" id="c21">gugugu</label>
-            <label for="targ02" id="d22">bbbbbbbb</label>
-            <br/><input type="checkbox" id="targ03" name="targ03" value="Три">Три
-            <label for="targ03" id="c31">nununu</label>
-            <label for="targ03" id="d32">kkkkkkk</label>
-        </form>
+        <script type="text/javascript">
+            var handle = Anna.FormRender.renderCheckboxSection($("div#checkTarget2"), Anna.Forms.Data.form4);
+            $("a.test").click(function(){
+                alert(JSON.stringify(handle()));
+                return false;
+            });
+        </script>
     </div>
     <script type="text/javascript">
         $(function () {
-            $("#c11").hide();
-            $("#c21").hide();
-            $("#c31").hide();
-            $("#d12").hide();
-            $("#d22").hide();
-            $("#d32").hide();
             $("#kom1").hide();
             $("#deduct").hide();
             $("#non-deduct").hide();
             $("#text1").hide();
-
+            $("#text2").hide();
+            $("#fakt").hide();
+            $("#per").hide();
         });
     </script>
-    <button id="choose4" value="Check" name="Check">Check</button>
-
-    <script type="text/javascript">
-        $(function () {
-            $("#choose4").click(function () {
-                $(this).attr("disabled", "disabled");
-                $("#choose5").removeAttr("disabled", true);
-                $("#choose6").removeAttr("disabled");
-                $("#choose3").attr("disabled", "disabled", true);
-            });
-                $("#choose4").click(function () {
-                if ($('input:checkbox[name=targ01]').is(":checked")) {
-                    $("#c11").show();
-                } else {
-                    $("#d12").show();
-                }
-                if ($('input:checkbox[name=targ02]').is(":checked")) {
-                    $("#c21").show();
-                } else {
-                    $("#d22").show();
-                }
-
-                if ($('input:checkbox[name=targ03]').is(":checked")) {
-                    $("#c31").show();
-                } else {
-                    $("#d32").show();
-                }
-            });
-        });
-    </script>
-    <button id="choose5" value="Second" name="Second" disabled="disabled">
-        Second
+    <button id="choose5" value="Second" name="Second" disabled="disabled">Second</button>
         <script type="text/javascript">
             $(function () {
                 $("#choose5").click(function () {
                     $("#kom1").show();
-                    $(this).attr("disabled", "disabled");
-                    $("#choose4").Attr("disabled");
-                    //     $("#choose6").removeAttr("disabled", true)
                 });
             });
         </script>
-    </button>
-    <button id="choose6" value="stepB" disabled="disabled">
-        Step back
-        <script type="text/javascript">
-            $(function () {
-                $("#choose6").click(function () {
-                    $(this).removeAttr("disabled", "disabled");
-                    $("#choose4").removeAttr("disabled");
-                    $("#choose5").attr("disabled", "disabled");
-                });
-                ///и здесь!
-                $("#choose6").click(function () {
-                    $("input:checkbox").removeAttr("checked");
-                });
-                ///и еще здесь!
-                $("#choose6").click(function () {
-                    $("#c11").hide();
-                    $("#c21").hide();
-                    $("#c31").hide();
-                    $("#d12").hide();
-                    $("#d22").hide();
-                    $("#d32").hide();
-                    $("kom1").hide();
-                });
-            });
-        </script>
-    </button>
 </div>
 <div id="kom1">
-    <p>Командировочное удостоверение - это .......</p>
-
-    <p>Условия:</p>
-
-    <div id="checkTarget02">
-        <input type="checkbox" id="targ001" name="targ001" value="Раз">Раз
-        <label for="targ001" id="c111">bububu</label>
-        <label for="targ001" id="d121">mmmmmm</label>
-        <br/><input type="checkbox" id="targ002" name="targ002" value="Два">Два
-        <label for="targ002" id="c211">gugugu</label>
-        <label for="targ002" id="d221">bbbbbbbb</label>
-        <br/><input type="checkbox" id="targ003" name="targ003" value="Три">Три
-        <label for="targ003" id="c311">nununu</label>
-        <label for="targ003" id="d321">kkkkkkk</label>
-    </div>
+    <h3>Командировочное удостоверение - это .......</h3>
+    <h3>Условия:</h3>
+    <div id="checkTarget02"></div>
     <script type="text/javascript">
-        $(function () {
-            $("#c111").hide();
-            $("#c211").hide();
-            $("#c311").hide();
-            $("#d121").hide();
-            $("#d221").hide();
-            $("#d321").hide();
-        });
-    </script>
-    <button id="choose7" value="Check" name="Check">Check</button>
-    <script type="text/javascript">
-        $(function () {
-            $("#choose7").click(function () {
-                $(this).attr("disabled", "disabled");
-                $("#choose8").removeAttr("disabled", true);
-                $("#choose9").removeAttr("disabled");
-                $("#choose3").attr("disabled", "disabled", true);
-                $("#choose6").attr("disabled", "disabled", true);
-            });
-            $("#choose7").click(function () {
-                if ($('input:checkbox[name=targ001]').is(":checked")) {
-                    $("#c111").show()
-                } else {
-                    $("#d121").show()
-                }
-
-                if ($('input:checkbox[name=targ002]').is(":checked")) {
-                    $("#c211").show()
-                } else {
-                    $("#d221").show()
-                }
-
-                if ($('input:checkbox[name=targ003]').is(":checked")) {
-                    $("#c311").show()
-                } else {
-                    $("#d321").show()
-                }
-            });
+        var handle = Anna.FormRender.renderCheckboxSection($("div#checkTarget02"), Anna.Forms.Data.form5);
+        $("a.test").click(function(){
+            alert(JSON.stringify(handle()));
+            return false;
         });
     </script>
     <button id="choose8" value="Result" name="Result" disabled="disabled">Result</button>
@@ -331,31 +129,7 @@
                 $("#deduct").show();
                 $("#non-deduct").show();
                 $("#text1").show();
-                $(this).attr("disabled", "disabled");
-                $("#choose7").Attr("disabled");
-                 $("#choose6").removeAttr("disabled", true);
         });
-        });
-    </script>
-    <button id="choose9" value="stepB" disabled="disabled">Step back</button>
-    <script type="text/javascript">
-        $(function () {
-            $("#choose9").click(function () {
-                $(this).removeAttr("disabled", "disabled");
-                $("#choose7").removeAttr("disabled");
-                $("#choose8").attr("disabled", "disabled");
-            });
-            $("#choose9").click(function () {
-                $("input:checkbox").removeAttr("checked");
-            });
-            $("#choose9").click(function () {
-                $("#c111").hide();
-                $("#c211").hide();
-                $("#c311").hide();
-                $("#d121").hide();
-                $("#d221").hide();
-                $("#d321").hide();
-            });
         });
     </script>
 </div>
@@ -363,37 +137,42 @@
 <button id="deduct" value="deduct" name="deduct">Deductible</button>
  <script type="text/javascript">
      $("#deduct").click(function() {
-              location.href = "RFDeduct.html"
+         $("#fakt").show();
+         $("#per").show();
+         $("#text2").show();
          });
  </script>
 <button id="non-deduct" value="non-deduct" name="non-deduct">Non-deductible</button>
-<br/>
-<br/>
-<br/>
-
-
-
-<!---
-</div><div id="result1" style="float:right">
-//    bla bla bla <span class="place1"></span> xxx ddd  <span class="place2"></span>;l sad;lkfjsdf;lkj
-//</div>
-//<script type="text/javascript">
-
-//    $(document).on("change", function() {
-
-        if ($("#targ1").is(":checked")) {
-            $("#result1 span.place1").text("selected " + $("#c1").html());
-        } else {
-            $("#result1 span.place1").text("unselected tags:01");
-        }
+    <script type="text/javascript">
+        $(function(){
+            $("#non-deduct").click(function(){
+                 alert("sorry this page under construction!!");
+        });
+            });
+    </script>
+<div id="text2">Каким образом сотрудник отчитывается:</div>
+    <button id="per">Per Diem</button>
+    <script type="text/javascript">
+        $(function(){
+            $("#per").click(function(){
+        location.href = "RFDeduct.html"
+        });
+            });
+    </script>
+    <button id="fakt">Expenses</button>
+<script type="text/javascript">
+    $(function(){
+        $("#fact").click(function(){
+            alert("sorry this page under construction!!");
+        });
     });
-
-
-
-
 </script>
- !--->
+
+<br/>
+<br/>
+<br/>
 </div>
+<a href="#" class="test">Показать выбраные значения</a>
 </body>
 
 </html>

@@ -65,23 +65,77 @@ Anna.Forms.Data = {
     form3 : {
         c1 : {
             name : "Раз",
-            text : "1"
+            checked : "все ок",
+            unchecked : "не все ок"
         },
         c2:
         {
             name : "Два",
-            text : "2"
+            checked : "все ок",
+            unchecked : "не все ок"
         },
         c3:
         {
             name : "Три",
-            value : "3"
+            checked : "все ок",
+            unchecked : "не все ок"
         },
         c4:
         {
             name : "Четыре",
-            select : "4"
+            checked : "все ок",
+            unchecked : "не все ок"
         }
-}
+    },
+    form4 : {
+        d1 : {
+            name : "Раз",
+            checked : "все ок",
+            unchecked : "не все ок"
+        },
+        d2:
+        {
+            name : "Два",
+            checked : "все ок",
+            unchecked : "не все ок"
+        },
+        d3:
+        {
+            name : "Три",
+            checked : "все ок",
+            unchecked : "не все ок"
+        },
+        d4:
+        {
+            name : "Четыре",
+            checked : "все ок",
+            unchecked : "не все ок"
+        }
+    },
+    form5 : {
+        e1 : {
+            name : "Раз",
+            checked : "все ок",
+            unchecked : "не все ок"
+        },
+        e2:
+        {
+            name : "Два",
+            checked : "все ок",
+            unchecked : "не все ок"
+        },
+        e3:
+        {
+            name : "Три",
+            checked : "все ок",
+            unchecked : "не все ок"
+        },
+        e4:
+        {
+            name : "Четыре",
+            checked : "все ок",
+            unchecked : "не все ок"
+        }
+    }
     };
 
