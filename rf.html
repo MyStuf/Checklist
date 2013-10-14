@@ -66,7 +66,6 @@
         $(function() {
 
             //вот тут чтото уж слижком все сложно написано....
-            $(function () {
                 $("#discript").hide();
                 $("#begin").hide();
                 $("#Order").hide();
@@ -87,18 +86,12 @@
                     }
                     return false;
                 });
-            });
-
-            $(function () {
                 $("#choose1").click(function () {
                     $(this).attr("disabled", "disabled");
                     $("#next").removeAttr("disabled");
                     $("#choose3").removeAttr("disabled")
                 });
-            });
 
-
-            $(function () {
                 $("#kom1").hide();
                 $("#deduct").hide();
                 $("#non-deduct").hide();
@@ -106,7 +99,6 @@
                 $("#text2").hide();
                 $("#fakt").hide();
                 $("#per").hide();
-            });
 
             $("#deduct").click(function() {
                 $("#fakt").show();
@@ -115,22 +107,17 @@
                 });
 
 
-            $(function(){
+
                 $("#non-deduct").click(function(){
                      alert("sorry this page under construction!!");
             });
-                });
-            $(function(){
                 $("#per").click(function(){
             location.href = "RFDeduct.html"
             });
-                });
 
-            $(function(){
                 $("#fact").click(function(){
                     alert("sorry this page under construction!!");
                 });
-            });
 
 
 
