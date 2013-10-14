@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript" src="jquery-1.10.2.min.js"> </script>
+    <style type="text/css"> @import "css/style.css"; </style>
+    <script type="text/javascript" src="tests/Data_list.js"> </script>
+    <script type="text/javascript" src="tests/Data_render.js"> </script>
+
+    <title>2</title>
+</head>
+<body>
+
+<div  id="box1">
+<input type="checkbox" name="option1" value="Раз">Раз
+  <label for="box1" id="c1">bububu</label>
+  <label for="box1" id="d1">mmmmmm</label>
+<br/><input type="checkbox" name="option2" value="Два">Два
+  <label for="box1" id="c2">gugugu</label>
+  <label for="box1" id="d2">bbbbbbbb</label>
+<br/><input type="checkbox" name="option3" value="Три">Три
+  <label for="box1" id="c3">nununu</label>
+  <label for="box1" id="d3">kkkkkkk</label>
+</div>
+<script id="draft" type="text/javascript">
+$(function() {
+    $("#c1").hide();
+    $("#c2").hide();
+    $("#c3").hide();
+    $("#d1").hide();
+    $("#d2").hide();
+    $("#d3").hide();
+    $("#alrt1").hide();
+    $("#alrt2").hide();
+});
+</script>
+<button id="button1" value="CHECK" name="CHECK"> CHECK
+<div id="result"></div>
+</button>
+<script type="text/javascript">
+        $(function(){
+                $("#button1").click(function(){
+                    if( $('input:checkbox[name=option1]').is(":checked")){
+                        $("#c1").show()
+                    } else{
+                        $("#d1").show()
+                    }
+                    if( $('input:checkbox[name=option2]').is(":checked")){
+                        $("#c2").show()
+                    } else{
+                        $("#d2").show()
+                    }
+                    if( $('input:checkbox[name=option3]').is(":checked")){
+                        $("#c3").show()
+                    } else{
+                        $("#d3").show()
+                    }
+                });
+              $("#button1").click(function(){
+              $(this).attr("disabled", "disabled");
+              $("#second").removeAttr("disabled");
+              $("#stepb").removeAttr("disabled");
+  });
+        });
+</script>
+<button id="second" value = "second" disabled="disabled">Second</button>
+<script type="text/javascript">
+    $(function(){
+    $("#second").click(function() {
+        $("#action1").show();
+
+    });
+    });
+</script>
+<button id="stepb" value = "stepb" disabled="disabled">Step </button>
+    <script type="text/javascript">
+    $(function(){
+        $("#stepb").click(function(){
+            $(this).attr("disabled", "disabled");
+            $("#second").attr("disabled","disabled");
+            $("#button1").removeAttr("disabled");
+        });
+    });
+    $(function(){
+        $("#stepb").click(function(){
+            $("input:checkbox").removeAttr("checked");
+        });
+    });
+    $(function(){
+        $("#stepb").click(function(){
+            location.reload();
+       });
+    });
+    </script>
+<script type="text/javascript">
+$(function() {
+    $("#action1").hide();
+});
+</script>
+<div id="action1">
+<p>Выберете вид авансового отчета:</p>
+<br>
+<form>
+<select id="optionsToSelect">
+   <option value=""></option>
+   <option value="hoz">Хоз расходы</option>
+   <option value="marketing">Маркетинговые расходы</option>
+   <option value="kom">Командировочне расходы</option>
+</select>
+</form>
+<button id="button" value="NEXT">Next</button>
+
+    <script type="text/javascript">
+        $(function() {
+        $("#group01").hide();
+        $("#button").click(function() {
+            if ($("#optionsToSelect").val() === ""){
+                alert("Choose option!!");
+                }
+            if ($("#optionsToSelect").val() === "kom"){
+                $("#group01").show();
+                $("#next2").show();
+                }
+            });
+        });
+    </script>
+<div id="group01">
+    <p>Выберите направление:</p>
+    <form>
+    <select id="optionsToSelect1">
+        <option value=""></option>
+        <option value="rf" id="rf">РФ</option>
+        <option value="cis">СНГ</option>
+        <option value="foreing">Заграница</option>
+    </select>
+    </form>
+<button id="next2" value="next2">NEXT</button>
+    <script type="text/javascript">
+        $(function() {
+            $("#next2").hide();
+            $("#next2").click(function() {
+             if ($("#optionsToSelect1").val() === "rf"){
+                 location.href = "RF.html"
+             }
+               });
+        });
+   </script>
+</div>
+</div>
+
+</body>
+</html>

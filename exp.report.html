@@ -4,141 +4,35 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <script type="text/javascript" src="jquery-1.10.2.min.js"> </script>
     <style type="text/css"> @import "css/style.css"; </style>
-    <script type="text/javascript" src="data_list.js"> </script>
+    <script type="text/javascript" src="tests/Data_list.js"> </script>
+    <script type="text/javascript" src="tests/Data_render.js"> </script>
+
     <title>TE audit</title>
 </head>
 <body>
     <p>Авансовый отчет - это....</p>
     <br/>
     <br/>
-    <p>Проверьте, что критерии соотвертвуют:</p>
-    <button id="clear">CLEAR</button>
-    <button id="check">CHECK</button>
+    <div id="data" ></div>
+    <script type="text/javascript">
+        var handle = Anna.FormRender.renderCheckboxSection($("div#data"), Anna.Forms.Data.form2);
+        var handle = Anna.FormRender.DropDownList($("div#data"), Anna.Forms.Data.form3);
 
-    <script text="text/javascript">
-
-        var data = $.readData();
-        var checboxis = function(dest, data) {
-         var el = $("<div><input type='checkbox'> <label></label> <span></span> <span></span></div>");
-             dest.append(el);
-         var first = el.find("span:first");
-         var last = el.find("span:last");
-
-    first.hide();
-    last.hide();
-
-    first.text(data.checked);
-    last.text(data.unchecked);
-    el.find("label").text(data.name);
-
-
-    data.hideAll = function() { filst.hide(); last.hide();};
-
-    el.find("input").change(function() {
-
-    if ($(this).is(":checked")) {
-    data.userValue = first.text();
-    first.show();
-    last.hide();
-    } else {
-    data.userValue = last.text();
-    last.show();
-    first.hide();
-    }
-    });
-
-    };
-        renderForm(Data.form1);
-
-        init(Data.form1.bt1);
-                http://api.jquery.com/each/
-                    $("div.block").each(function(idx) {
-
-                        init(node, Data.form1.bt2);
-
-                        $(this).append(node);
-                    });
-        var renderForm = function(data) {
-            var root = $("<div><div></div><button class='clear'>clear</button></div>");
-
-            root.find("button.clear");
-
-            $.each(data, function(idx, s) {
-                checboxis(root.find("div:first"), s);
-
-                s.hideAll();
-
-            });
-
-
-            $("#clear").click( function() {
-                $("div.block2 input[type='checkbox']:checked").click();
-                $("div.block2 span").hide();
-
-
-            });
-
-            $("#check").click( function() {
-                $("div.block2 ")
-            });
-        };
-
-
-
-    </script>
-
-      <div  id="box1">
-        <input type="checkbox" name="option1" value="Раз">Раз
-          <label for="box1" id="c1">bububu</label>
-          <label for="box1" id="d1">mmmmmm</label>
-    <br/><input type="checkbox" name="option2" value="Два">Два
-          <label for="box1" id="c2">gugugu</label>
-          <label for="box1" id="d2">bbbbbbbb</label>
-    <br/><input type="checkbox" name="option3" value="Три">Три
-          <label for="box1" id="c3">nununu</label>
-          <label for="box1" id="d3">kkkkkkk</label>
-      </div>
-    <script id="draft" type="text/javascript">
-        $(function() {
-            $("#c1").hide();
-            $("#c2").hide();
-            $("#c3").hide();
-            $("#d1").hide();
-            $("#d2").hide();
-            $("#d3").hide();
-            $("#alrt1").hide();
-            $("#alrt2").hide();
+        $("a.test").click(function(){
+            alert(JSON.stringify(handle()));
+            return false;
+        });
+        $("next").click(function(){
+            alert(JSON.stringify(handle()));
+            return false;
         });
     </script>
-    <button id="button1" value="CHECK" name="CHECK"> CHECK
-    <div id="result"></div>
-    </button>
-    <script type="text/javascript">
-                $(function(){
-                        $("#button1").click(function(){
-                            if( $('input:checkbox[name=option1]').is(":checked")){
-                                $("#c1").show()
-                            } else{
-                                $("#d1").show()
-                            }
-                            if( $('input:checkbox[name=option2]').is(":checked")){
-                                $("#c2").show()
-                            } else{
-                                $("#d2").show()
-                            }
-                            if( $('input:checkbox[name=option3]').is(":checked")){
-                                $("#c3").show()
-                            } else{
-                                $("#d3").show()
-                            }
-                        });
-                      $("#button1").click(function(){
-                      $(this).attr("disabled", "disabled");
-                      $("#second").removeAttr("disabled");
-                      $("#stepb").removeAttr("disabled");
-          });
-                });
-     </script>
+
+
+
+        <!---
+
+
     <button id="second" value = "second" disabled="disabled">Second</button>
         <script type="text/javascript">
             $(function(){
@@ -148,31 +42,7 @@
             });
             });
         </script>
-        <button id="stepb" value = "stepb" disabled="disabled">Step </button>
-            <script type="text/javascript">
-            $(function(){
-                $("#stepb").click(function(){
-                    $(this).attr("disabled", "disabled");
-                    $("#second").attr("disabled","disabled");
-                    $("#button1").removeAttr("disabled");
-                });
-            });
-            $(function(){
-                $("#stepb").click(function(){
-                    $("input:checkbox").removeAttr("checked");
-                });
-            });
-            $(function(){
-                $("#stepb").click(function(){
-                    location.reload();
-               });
-            });
-            </script>
-    <script type="text/javascript">
-        $(function() {
-            $("#action1").hide();
-        });
-    </script>
+
     <div id="action1">
         <p>Выберете вид авансового отчета:</p>
         <br>
@@ -184,6 +54,8 @@
            <option value="kom">Командировочне расходы</option>
         </select>
       </form>
+    </div>
+
         <button id="button" value="NEXT">Next</button>
 
             <script type="text/javascript">
@@ -223,5 +95,9 @@
            </script>
       </div>
     </div>
+
+    !--->
+    <a href="#" class="test">Показать выбраные значения</a>
+
 </body>
 </html>

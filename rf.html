@@ -34,7 +34,7 @@
                         alert("Choose option!!")
                     }
 
-                    ///вот про это я забыл, но это ОБЯЗАТЕЛЬНО!
+
                     return false;
                 });
             });
@@ -143,11 +143,11 @@
                 $("#choose2").attr("disabled", "disabled", true);
                 $("#choose1").removeAttr("disabled", "disabled");
             });
-            ///почему еще 1
+
             $("#choose3").click(function () {
                 $("input:checkbox").removeAttr("checked");
             });
-            ///и еще 1 тут?
+
             $("#choose3").click(function () {
                 $("input:checkbox").removeAttr("checked");
                 $("#c1").hide();
@@ -207,8 +207,7 @@
                 $("#choose6").removeAttr("disabled");
                 $("#choose3").attr("disabled", "disabled", true);
             });
-            ///и тут повторка!
-            $("#choose4").click(function () {
+                $("#choose4").click(function () {
                 if ($('input:checkbox[name=targ01]').is(":checked")) {
                     $("#c11").show();
                 } else {

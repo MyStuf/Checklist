@@ -14,7 +14,7 @@ if (null == Anna.Forms) Anna.Forms = {};
 Anna.Forms.Data = {
     form1 : {
         a1 : {
-            name : "aAAA",
+            name : "a1",
             checked : "foo",
             unchecked : "bar"
         },
@@ -36,6 +36,52 @@ Anna.Forms.Data = {
             checked : "f1vcvb23123oo",
             unchecked : "b1cvbcvb23123ar"
         }
-    }
-};
+    },
+    form2 : {
+        b1 : {
+            name : "Раз",
+            checked : "все ок",
+            unchecked : "не все ок"
+        },
+        b2:
+        {
+            name : "Два",
+            checked : "все ок",
+            unchecked : "не все ок"
+        },
+        b3:
+        {
+            name : "Три",
+            checked : "все ок",
+            unchecked : "не все ок"
+        },
+        b4:
+        {
+            name : "Четыре",
+            checked : "все ок",
+            unchecked : "не все ок"
+        }
+    },
+    form3 : {
+        c1 : {
+            name : "Раз",
+            text : "1"
+        },
+        c2:
+        {
+            name : "Два",
+            text : "2"
+        },
+        c3:
+        {
+            name : "Три",
+            value : "3"
+        },
+        c4:
+        {
+            name : "Четыре",
+            select : "4"
+        }
+}
+    };
 

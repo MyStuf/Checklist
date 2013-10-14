@@ -60,6 +60,7 @@ Anna.FormRender = {
 
       container.append($("<button class='clean'>CLEAN</button>"));
       container.append($("<button class='check'>CHECK</button>"));
+      container.append($("<button class='next'>NEXT</button>"));
 
       container.find("button.clean").click(function() {
           $.each(state.items, function(idx, item) { item.clear(); })
@@ -75,5 +76,19 @@ Anna.FormRender = {
           });
           return result;
       }
-  }
+  },
+    DropDownList : function(elementToInsert, DropDownData) {
+        var e = $("<div><select> <option></option> <option></option> </select> </div>");
+        elementToInsert.append(e);
+
+        DropDownData.DataSource = Anna.Forms.Data;
+        DropDownData.DataTextField = "name";
+        DropDownData.DataVialueField = "value";
+        DropDownData.dataBind();
+        DropDownData.items.add(0, new elementToInsert("Выберите...", ""));
+        $.each(DropDownData, function(idx) {
+        select.items[idx] = Anna.FormRender.DropDownList(DropDownData);
+    });
+    }
+
 };
