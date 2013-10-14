@@ -12,7 +12,7 @@
 
 <h1>РФ</h1>
 
-<div id="action3" class="block">
+<div class="block">
     <h3><label for="target">Цель командировки:</label></h3>
     <!-- можно сделать 3 кнопки - так будет удобнне -->
     <select id="target">
@@ -21,38 +21,39 @@
         <option value="2">Участие в конференции</option>
         <option value="3">Участие в семинаре</option>
     </select>
-    <button id="targetButton">Select</button>
+    <button id="targetButton" disabled="disabled">Select</button>
 </div>
 
-<div id="discript" class="block">
+<div id="target1Block" class="hidden block">
     <h3>Условия, которые должны быть соблюдены:</h3>
-
     <div id="checkTarget1"></div>
+</div>
 
-</div>
-<div id="begin">
-    <p>Командировочные документы:</p>
-</div>
-<div id="Order">
+<div id="target2Block" class="hidden block">
+    <h3>Командировочные документы:</h3>
     <h3>Приказ - это .......</h3>
-
     <h3>Условия:</h3>
-
     <div id="checkTarget2"></div>
 </div>
-<div id="kom1">
+
+<div id="target02Block" class="hidden block">
     <h3>Командировочное удостоверение - это .......</h3>
-
     <h3>Условия:</h3>
-
     <div id="checkTarget02"></div>
 </div>
-<div id="text1">Выберете решение:</div>
-<button id="deduct" value="deduct" name="deduct">Deductible</button>
-<button id="non-deduct" value="non-deduct" name="non-deduct">Non-deductible</button>
-<div id="text2">Каким образом сотрудник отчитывается:</div>
-<button id="per">Per Diem</button>
-<button id="fakt">Expenses</button>
+
+<div id="targetDecisionBlock" class="hidden block">
+    <h3>Выберете решение:</h3>
+    <button id="deduct" value="deduct" name="deduct">Deductible</button>
+    <button id="non-deduct" value="non-deduct" name="non-deduct">Non-deductible</button>
+</div>
+
+<div id="targetExpensesMode" class="hidden block">
+    <h3 >Каким образом сотрудник отчитывается:</h3>
+    <button id="per">Per Diem</button>
+    <button id="fakt">Expenses</button>
+</div>
+
 <br/>
 <br/>
 <br/>
@@ -61,59 +62,47 @@
  похоже чтото не то со вложенностью элементов.
  стоит это проверить!
  -->
-
-
 <a href="#" class="test">Показать выбраные значения</a>
 
 <script type="text/javascript">
     ///тут мы радостно забыли $(function() { ... в итоге половина их всего этого просто не будет работать.
     $(function () {
+        ///одним махом прячем все лишнее
+        $("div.hidden").hide();
+
+        $("#target").change(function() {
+            if ($(this).val() === "") {
+                $("#targetButton").attr("disabled", "disabled");
+            } else {
+                $("#targetButton").removeAttr("disabled");
+            }
+        });
 
         //вот тут чтото уж слижком все сложно написано....
-        $("#discript").hide();
-        $("#begin").hide();
-        $("#Order").hide();
-        $("#next").hide();
-        $("#checkTarget1").hide();
-        $("#checkTarget2").hide();
-        $("#choose5").hide();
         $("#targetButton").click(function () {
             var target = $("#target");
-
             if (target.val() === "1") {
-                $("#discript").show();
-                $("#next").show();
-                $("#checkTarget1").show();
+                $("#target1Block").show();
                 $(this).prop('disabled', 'disabled');
+                target.prop('disabled', 'disabled');
             } else {
-                alert("Choose option!!")
+                alert("Not implemented! Choose option!!")
             }
             return false;
         });
-        $("#choose1").click(function () {
-            $(this).attr("disabled", "disabled");
-            $("#next").removeAttr("disabled");
-            $("#choose3").removeAttr("disabled")
-        });
-
-        $("#kom1").hide();
-        $("#deduct").hide();
-        $("#non-deduct").hide();
-        $("#text1").hide();
-        $("#text2").hide();
-        $("#fakt").hide();
-        $("#per").hide();
 
         $("#deduct").click(function () {
-            $("#fakt").show();
-            $("#per").show();
-            $("#text2").show();
+            $("#targetExpensesMode").show();
         });
-
 
         $("#non-deduct").click(function () {
             alert("sorry this page under construction!!");
         });
+
+        $("fakt").click(function () {
+            alert("sorry this page under construction!!");
+        });
+
         $("#per").click(function () {
             location.href = "RFDeduct.html"
         });
@@ -122,26 +111,20 @@
             alert("sorry this page under construction!!");
         });
 
-
         var handle_1 = Anna.FormRender.renderCheckboxSection($("div#checkTarget1"), Anna.Forms.Data.form3);
-        var handle_2 = Anna.FormRender.renderCheckboxSection($("div#checkTarget02"), Anna.Forms.Data.form5);
-        var handle_3 = Anna.FormRender.renderCheckboxSection($("div#checkTarget2"), Anna.Forms.Data.form4);
+        var handle_2 = Anna.FormRender.renderCheckboxSection($("div#checkTarget2"), Anna.Forms.Data.form4);
+        var handle_3 = Anna.FormRender.renderCheckboxSection($("div#checkTarget02"), Anna.Forms.Data.form5);
 
         handle_1.nextClick(function () {
-            $("#begin").show();
-            $("#Order").show();
-            $("#checkTarget2").show();
-            $("#choose5").show();
+            $("#target2Block").show();
         });
 
         handle_2.nextClick(function () {
-            $("#deduct").show();
-            $("#non-deduct").show();
-            $("#text1").show();
+            $("#target02Block").show();
         });
 
         handle_3.nextClick(function () {
-            $("#kom1").show();
+            $("#targetDecisionBlock").show();
         });
 
         ///обработчик клика по ссылке нужно регистрировать _1_ раз,
