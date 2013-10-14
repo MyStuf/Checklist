@@ -44,7 +44,7 @@ Anna.FormRender = {
   },
 
   renderCheckboxSection : function(elementToInsert, formData) {
-      var container = $("<div class='block'></div>");
+      var container = $("<div></div>");
       elementToInsert.append(container);
 
       container.append($("<p>Проверьте, что критерии соотвертвуют:</p>"));
