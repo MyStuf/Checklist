@@ -61,7 +61,7 @@ Anna.FormRender = {
       container.append($("<button class='clean' disabled='disabled'>CLEAN</button>"));
       container.append($("<button class='check'>CHECK</button>"));
       //добавляем кнопку "далее" тут, чтобы она появлялась _во_ всех шаблонах
-      container.append($("<button class='next'>NEXT</button>"));
+      container.append($("<button class='next' disabled='disabled'>NEXT</button>"));
 
       container.find("button.clean").click(function() {
           $("#action1").hide();
