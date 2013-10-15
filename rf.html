@@ -14,7 +14,6 @@
 
 <div class="block">
     <h3><label for="target">Цель командировки:</label></h3>
-    <!-- можно сделать 3 кнопки - так будет удобнне -->
     <select id="target">
         <option value=""></option>
         <option value="1">Участие в производственном совещании</option>
@@ -57,17 +56,11 @@
 <br/>
 <br/>
 <br/>
-<!--
- потеренный закрывающий </div>
- похоже чтото не то со вложенностью элементов.
- стоит это проверить!
- -->
+
 <a href="#" class="test">Показать выбраные значения</a>
 
 <script type="text/javascript">
-    ///тут мы радостно забыли $(function() { ... в итоге половина их всего этого просто не будет работать.
     $(function () {
-        ///одним махом прячем все лишнее
         $("div.hidden").hide();
 
         $("#target").change(function() {
@@ -78,7 +71,6 @@
             }
         });
 
-        //вот тут чтото уж слижком все сложно написано....
         $("#targetButton").click(function () {
             var target = $("#target");
             if (target.val() === "1") {
@@ -126,12 +118,8 @@
         handle_3.nextClick(function () {
             $("#targetDecisionBlock").show();
         });
-
-        ///обработчик клика по ссылке нужно регистрировать _1_ раз,
-        ///иначе он тебе замучает сообщениями
         $("a.test").click(function () {
             alert(JSON.stringify(
-                    ///сложим данные по формам
                     {
                         form_1: handle_1(),
                         form_2: handle_2(),

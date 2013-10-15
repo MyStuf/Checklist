@@ -60,33 +60,19 @@ Anna.FormRender = {
 
       container.append($("<button class='clean' disabled='disabled'>CLEAN</button>"));
       container.append($("<button class='check'>CHECK</button>"));
-      //добавляем кнопку "далее" тут, чтобы она появлялась _во_ всех шаблонах
       container.append($("<button class='next' disabled='disabled'>NEXT</button>"));
 
       container.find("button.clean").click(function() {
-          $("#action1").hide();
           $.each(state.items, function(idx, item) { item.clear(); });
-        //тут нельзя использовать $, т.к. он будет искать по _всей_ странице
-        //Нужно все искать внутри контейнет 'container', как написано выше
         container.find("button.check").removeAttr("disabled", true);
         container.find("button.next").attr("disabled", true);
-//          не понятно, как это может работат тут, если этих
-//          элементов нету в шаблоне выше
-//           $("#choose5").attr("disabled", true);
-//          $("#choose8").attr("disabled", true);
       });
       container.find("button.check").click(function() {
           $.each(state.items, function(idx, item) { item.check(); });
 
           $(this).attr("disabled", "disabled");
-        //тут нельзя использовать $, т.к. он будет искать по _всей_ странице
-        //Нужно все искать внутри контейнет 'container', как написано выше
         container.find("button.next").removeAttr("disabled");
         container.find("button.clean").removeAttr("disabled");
-//          не понятно, как это может работат тут, если этих
-//          элементов нету в шаблоне выше
-//          $("#choose5").removeAttr("disabled");
-//          $("#choose8").removeAttr("disabled");
           });
       var resultFunction = function() {
           var result = {};

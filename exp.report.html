@@ -10,87 +10,102 @@
     <title>TE audit</title>
 </head>
 <body>
-    <p>Авансовый отчет - это....</p>
+    <h1>Авансовый отчет</h1>
     <br/>
     <br/>
-    <div id="data" >
-    <script type="text/javascript">
-        var handle = Anna.FormRender.renderCheckboxSection($("div#data"), Anna.Forms.Data.form2);
-        $("a.test").click(function(){
-            alert(JSON.stringify(handle()));
-            return false;
-        });
-    </script>
-    <script type="text/javascript">
-        $(function() {
-            $("#action1").hide();
-            $("#action2").hide();
-            $("#next2").hide();
-            $("#buttonTarget").hide();
-        });
-    </script>
 
-    <button class='next' disabled="disabled" >NEXT</button>
-     <script type="text/javascript">
-      $(function(){
-       $("button.next").click(function() {
-       $("#buttonTarget").show();
-       $("#action1").show();
-       });
-      });
+    <h3>Авансовый отчет - это ...</h3>
 
-     </script>
-    </div>
+    <div id="data" class="block"> </div>
 
-    <div id="action1">
-        <p>Выберете вид авансового отчета:</p>
-        <br>
-      <form>
-        <select id="DropDownTarget">
+    <div class="hidden block" id="versionReport">
+        <h3><label for="DDTarget">Выберете вид авансового отчета:</label></h3>
+        <select id="DDTarget">
            <option value=""></option>
            <option value="hoz">Хоз расходы</option>
            <option value="marketing">Маркетинговые расходы</option>
            <option value="kom">Командировочне расходы</option>
         </select>
-    <button id="buttonTarget" value="NEXT">Next</button>
-            <script type="text/javascript">
-                $("#buttonTarget").click(function() {
-                    if ($("#DropDownTarget").val() === ""){
-                        alert("Choose option!!");
-
-                    } else if ($("#DropDownTarget").val() === "kom"){
-                        $("#action2").show();
-                        $("#next2").show();
-                        }
-
-                });
-            </script>
-      </form>
+    <button id="buttonTarget" disabled="disabled">Select</button>
     </div>
-    <div id="action2">
-            <p>Выберите направление:</p>
-            <form>
-            <select id="DropDownCountry">
+    <div id="action2" class="hidden block">
+        <h3><label for="DDCountry">Выберите направление:</label></h3>
+            <select id="DDCountry">
                 <option value=""></option>
-                <option value="rf" id="rf">РФ</option>
+                <option value="rf">РФ</option>
                 <option value="cis">СНГ</option>
                 <option value="foreing">Заграница</option>
             </select>
-            </form>
-        <button id="next2" value="next2">NEXT</button>
-            <script type="text/javascript">
-                $(function() {
-                    $("#next2").hide();
-                    $("#next2").click(function() {
-                     if ($("#optionsToSelect1").val() === "rf"){
-                         location.href = "rf.html"
-                     }
-                       });
-                });
-           </script>
+        <button id="button2Target" value="Select">Select</button>
     </div>
+    <br/>
+    <br/>
+    <br/>
 
     <a href="#" class="test">Показать выбраные значения</a>
+
+
+    <script type="text/javascript">
+        $(function () {
+        var handle_4 = Anna.FormRender.renderCheckboxSection($("div#data"), Anna.Forms.Data.form2);
+
+            $("div.hidden").hide();
+
+            handle_4.nextClick(function () {
+                $("#versionReport").show();
+            });
+
+            $("a.test").click(function () {
+                alert(JSON.stringify(
+                        {
+                            form_4: handle_4 ()
+                        }
+                ));
+                return false;
+            });
+
+            $("#DDTarget").change(function() {
+                if ($(this).val() === "") {
+                    $("#buttonTarget").attr("disabled", "disabled");
+                } else {
+                    $("#buttonTarget").removeAttr("disabled");
+                }
+            });
+            $("#buttonTarget").click(function () {
+                var target_1 = $("#DDTarget");
+                if (target_1.val() === "kom") {
+                    $("#action2").show();
+                    $(this).prop('disabled', 'disabled');
+                    target_1.prop('disabled', 'disabled');
+                } else {
+                    alert("Not implemented! Choose option!!")
+                }
+                return false;
+            });
+
+
+            $("#DDCountry").change(function() {
+                if ($(this).val() === "") {
+                    $("#button2Target").attr("disabled", "disabled");
+                } else {
+                    $("#button2Target").removeAttr("disabled");
+                }
+            });
+            $("#button2Target").click(function () {
+                var target_2 = $("#DDCountry");
+                if (target_2.val() === "rf") {
+                    location.href = "rf.html";
+
+                    $(this).prop('disabled', 'disabled');
+                    target_2.prop('disabled', 'disabled');
+                } else {
+                    alert("Not implemented! Choose option!!")
+                }
+                return false;
+            });
+        });
+
+    </script>
 
 </body>
 </html>

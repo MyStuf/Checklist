@@ -5,155 +5,117 @@
     <script type="text/javascript" src="jquery-1.10.2.min.js"></script>
     <script type="text/javascript" src="NumberOnly.js"></script>
     <style type="text/css"> @import "css/style.css"; </style>
+    <script type="text/javascript" src="tests/Data_list.js"> </script>
+    <script type="text/javascript" src="tests/Data_render.js"> </script>
     <title> RF Deductible</title>
 </head>
 <body>
 <h1>Командировка по РФ, суточные, Deductible</h1>
 <h3>Этап 1. Расчет суточных</h3>
 <h3>Введите количество дней к командировке</h3>
-
-<form>
+<div class="block" id="cal">
     <input id="text" type="text" name="text" size="20" />
-    <script type="text/javascript">
-        $("#text").ForceNumericOnly();
-        $(document).keyup(function(event) {
-            if (event.keyCode == 13 || event.keyCode == 10) {
-                $("#text").submit();
-                var text = $("#text").val() ;
-                if(text == 1){
-                    $("#result").show();
-                    $("#choose1").show();
-                    $("#result span.place1").text("LO   " + "250   " + "PIT");
-                } else if(text >= 2){
-                    $("#result").show();
-                    $("#choose1").show();
-                    $("#result span.place1").text("P0   " + "500" * text);
-                } else {
-                    alert("Please select the number of days!");
-                }
-                return;
-            } });
-    </script>
-</form>
-<button id="ok" value="ok" name="ok" type="submit">OK</button>
-     <script type="text/javascript">
-         $(function(){
-      $("#result").hide();
-      $("#verTipe").hide();
-      $("#base1").hide();
-      $("#choose1").hide();
-      $("#tickets").hide();
-      $("#ok").click(function(){
-          var text = $("#text").val() ;
-            if(text == 1){
-                $("#result").show();
-                $("#choose1").show();
-                $("#result span.place1").text("LO   " + "250   " + "PIT");
-            } else if(text >= 2){
-                $("#result").show();
-                $("#choose1").show();
-                $("#result span.place1").text("P0   " + "500" * text);
-            } else {
-                alert("Please select the number of days!");
-            }
-             });
-     });
- </script>
-
- <div id="result">
- <h3><span class="place1"></span></h3>
- </div>
-<button id="choose1" value="choose1" name="choose1">Choose expense</button>
-<script type="text/javascript">
-    $(function(){
-       $("#choose1").click(function(){
-           $("#verTipe").show();
-           $("#base1").show();
-       });
-    });
-</script>
-<form id="base1">
-    <h3>Вид расхода:</h3>
-    <select id="verTipe">
+    <button id="ok" value="ok" name="ok" type="submit">OK</button>
+</div>
+<div id="result">
+    <br/>
+    <h2><span class="place1"></span></h2>
+</div>
+<div id="button">
+    <br/>
+    <button id="choose1" value="choose1" name="choose1">Choose expense</button>
+</div>
+<div id="tipeVer">
+    <h3><label for="verTipe">Вид расхода:</label></h3>
+      <select id="verTipe">
         <option value=""></option>
         <option value="1">Билеты</option>
         <option value="2">Проживание</option>
         <option value="3">Трансфер</option>
-    </select>
-    <button id="ok1" value="ok1" name="ok1">OK</button>
-    <script type="text/javascript">
-        $(function () {
-            $("#ok1").click(function () {
-                var verTipe = $("#verTipe");
-
-                if (verTipe.val() === "1") {
-                    $("#tickets").show();
-                    $(this).prop('disabled', 'disabled');
-                } else {
-                    alert("Choose option!!")
-                }
-                return false;
-            });
-        });
-   </script>
-</form>
+      </select>
+      <button id="ok1" value="ok1" name="ok1">OK</button>
+</div>
 <br/>
- <div id="tickets">
-     <form>
-         <input type="checkbox" id="tar1" name="tar1" value="Раз"/>
-         <label for="tar1">Раз</label>
-
-         <span id="c1">bububu</span>
-         <span id="d1">mmmmmm</span>
-         <br/>
-
-         <input type="checkbox" id="tar12" name="tar12" value="Два"/>
-         <label for="tar12">Два</label>
-
-         <span id="c2">gugugu</span>
-         <span id="d2">bbbbbbbb</span>
-         <br/>
-
-         <input type="checkbox" id="tar13" name="tar13" value="Три"/>
-         <label for="tar13">Три</label>
-
-         <span id="c3">nununu</span>
-         <span id="d3">kkkkkkk</span>
-     </form>
-    <button id="select" name="select" value="select">Select</button>
-     <script type="text/javascript">
-         $(function () {
-             $("#select").click(function () {
-                 if ($('input:checkbox[name="tar1"]').is(":checked")) {
-                     $("#c1").show();
-                 } else {
-                     $("#d1").show();
-                 }
-
-                 if ($('input:checkbox[name="tar12"]').is(":checked")) {
-                     $("#c2").show();
-                 } else {
-                     $("#d2").show();
-                 }
-
-                 if ($('input:checkbox[name="tar13"]').is(":checked")) {
-                     $("#c3").show();
-                 } else {
-                     $("#d3").show();
-                 }
-             });
-             });
-     </script>
-    <button id="next" name="next" value="next">Next Item</button>
-    <script type="text/javascript">
-        $(function(){
-            $("#next").click(function(){
-                $("#verTipe").clone().prependTo("#clone1");
-                $("#ok1").clone().prependTo("#clone1");
-            });
-        });
-    </script>
- </div>
+<div id="tickets" class="hidden block"></div>
+<div id="accomodation" class="hidden block"></div>
 <div id="clone1"></div>
+
+<script type="text/javascript">
+    $(function () {
+    $("#button").hide();
+    $("#tipeVer").hide ();
+    $("#cal").ForceNumericOnly();
+
+    $(document).keyup(function(event) {
+        if (event.keyCode == 13 || event.keyCode == 10) {
+            $("#text").submit();
+            var text = $("#text").val() ;
+            if(text == 1){
+                $("#result").show();
+                $("#button").show();
+                $("#result span.place1").text("LO   " + "250   " + "PIT");
+            } else if(text >= 2){
+                $("#result").show();
+                $("#button").show();
+                $("#result span.place1").text("P0   " + "500" * text);
+            } else {
+                alert("Please select the number of days!");
+            }
+            return false;
+            }
+    });
+        $("#ok").click(function(){
+            var text = $("#text").val() ;
+            if(text == 1){
+                $("#result").show();
+                $("#button").show();
+                $("#result span.place1").text("LO   " + "250   " + "PIT");
+            } else if(text >= 2){
+                $("#result").show();
+                $("#button").show();
+                $("#result span.place1").text("P0   " + "500" * text);
+            } else {
+                alert("Please select the number of days!");
+            }
+        });
+
+        $("#choose1").click(function(){
+            $("#tipeVer").show();
+        });
+    });
+        $("#ok1").click(function(){
+            var target_6 = $("#verTipe");
+            if (target_6.val() === "1") {
+                $("#tickets").show();
+                $(this).prop('disabled', 'disabled');
+                target_6.prop('disabled', 'disabled');
+            } else {
+                alert("Not implemented! Choose option!!")
+            }
+            return false;
+
+        });
+
+    var handle_5 = Anna.FormRender.renderCheckboxSection($("div#tickets"), Anna.Forms.Data.form6);
+    var handle_6 = Anna.FormRender.renderCheckboxSection($("div#accomodation"), Anna.Forms.Data.form7);
+
+
+    $("div.hidden").hide();
+
+    handle_5.nextClick(function () {
+        $("#accomodation").show();
+    });
+
+    $("a.test").click(function () {
+        alert(JSON.stringify(
+                {
+                    form_6: handle_5 ()
+                }
+        ));
+        return false;
+    });
+
+</script>
+
 </body>
 </html>
