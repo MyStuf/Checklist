@@ -186,6 +186,16 @@ Anna.Forms.Data = {
             checked : "все ок",
             unchecked : "не все ок"
         }
+    },
+    form8 : {
+        a01 : {
+            name : "Билеты",
+            value : "1"
+        },
+        a02 : {
+            name : "Проживание",
+            value : "2"
+        }
     }
 
 };

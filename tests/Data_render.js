@@ -87,6 +87,44 @@ Anna.FormRender = {
       container.find("button.next").click(handler);
     };
     return resultFunction;
+  },
+
+  renderTypeOfExpense : function (elementToInsert, renderData) {
+    var container = $("<div> <label></label> <select> <option></option> </select> </div>");
+    elementToInsert.append(container);
+    container.append($("<p>Вид расхода:</p>"));
+
+    var nam = container.find("option");
+        nam.text(renderData.name);
+
+
+    var drop ={
+        items : {}
+    };
+
+        $.each(renderData, function(idx, renderData) {
+            drop.items[idx] = Anna.FormRender.renderTypeOfExpense (container, renderData);
+        });
+
+    container.append($("<button class = 'ok'>OK</button>"));
+
+    container.find("button.ok").click(function() {
+        var target_6 = container.val ();
+        if (target_6 === "1") {
+            resultFunction.nextClick = function(handler) {
+                container.find("button.ok").click(handler);
+            };
+        } else {
+            alert("Not implemented! Choose option!!")
+        }
+        return false;
+
+    });
+
+
+
   }
+
+
 
 };

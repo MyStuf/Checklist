@@ -42,9 +42,6 @@
     <br/>
     <br/>
 
-    <a href="#" class="test">Показать выбраные значения</a>
-
-
     <script type="text/javascript">
         $(function () {
         var handle_4 = Anna.FormRender.renderCheckboxSection($("div#data"), Anna.Forms.Data.form2);
@@ -53,15 +50,6 @@
 
             handle_4.nextClick(function () {
                 $("#versionReport").show();
-            });
-
-            $("a.test").click(function () {
-                alert(JSON.stringify(
-                        {
-                            form_4: handle_4 ()
-                        }
-                ));
-                return false;
             });
 
             $("#DDTarget").change(function() {
