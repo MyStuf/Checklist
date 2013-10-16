@@ -52,7 +52,10 @@ h2 {
 h3 {
   font-size: 100%;
 }
-
+h4 {
+    font-size: 120%;
+    text-align: center;
+}
 /* Normalize styling of form elements */
 form {
   margin: 0;
@@ -73,6 +76,8 @@ input[type='checkbox'], input[type='radio'] {
   margin-bottom: 0;
   margin-left: 0;
 }
+
+
 
 input[disabled] {
   background-color: #F9F9F9;

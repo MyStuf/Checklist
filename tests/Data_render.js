@@ -2,7 +2,7 @@ if (null == Anna) var Anna = {};
 
 Anna.FormRender = {
   renderOneCheckboxSection : function(elementToInsert, checkboxData) {
-      var el = $("<div><input type='checkbox'> <label></label> <span></span> <span></span></div>");
+      var el = $("<div><input type='checkbox'> <label></label>  <span></span> <span></span> </div>");
       elementToInsert.append(el);
 
       var first = el.find("span:first");
@@ -90,38 +90,35 @@ Anna.FormRender = {
   },
 
   renderTypeOfExpense : function (elementToInsert, renderData) {
-    var container = $("<div> <label></label> <select> <option></option> </select> </div>");
+    var container = $("<option></option>");
     elementToInsert.append(container);
     container.append($("<p>Вид расхода:</p>"));
 
-    var nam = container.find("option");
-        nam.text(renderData.name);
-
-
-    var drop ={
-        items : {}
-    };
-
+       var nam = container.val("<option></option>");
+       nam.text(renderData.name);
+        container.empty();
         $.each(renderData, function(idx, renderData) {
+            container.append($("<option value = " +'name'+ "></option>",{
+                value: this.value,
+                item: this.name
+            }));
             drop.items[idx] = Anna.FormRender.renderTypeOfExpense (container, renderData);
         });
 
-    container.append($("<button class = 'ok'>OK</button>"));
+//    container.append($("<button class = 'ok'>OK</button>"));
 
-    container.find("button.ok").click(function() {
-        var target_6 = container.val ();
-        if (target_6 === "1") {
-            resultFunction.nextClick = function(handler) {
-                container.find("button.ok").click(handler);
-            };
-        } else {
-            alert("Not implemented! Choose option!!")
-        }
-        return false;
-
-    });
-
-
+ //   container.find("button.ok").click(function() {
+ //       var target_6 = container.val ();
+ //       if (target_6 === "1") {
+  //          resultFunction.nextClick = function(handler) {
+  //              container.find("button.ok").click(handler);
+  //          };
+  //      } else {
+  //          alert("Not implemented! Choose option!!")
+  //      }
+  //      return false;
+//
+//    });
 
   }
 

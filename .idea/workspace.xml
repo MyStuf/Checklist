@@ -6,7 +6,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Data_render.js" afterPath="$PROJECT_DIR$/tests/Data_render.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RFDeduct.html" afterPath="$PROJECT_DIR$/RFDeduct.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exp.report.html" afterPath="$PROJECT_DIR$/exp.report.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rf.html" afterPath="$PROJECT_DIR$/rf.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="check list.iws" />
@@ -33,16 +35,7 @@
       <file leaf-file-name="rf.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rf.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="37" selection-start="1830" selection-end="1830" vertical-scroll-proportion="0.5" vertical-offset="882" max-vertical-offset="2160">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="exp.report.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/exp.report.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="0" selection-start="1851" selection-end="1851" vertical-scroll-proportion="-22.5" vertical-offset="255" max-vertical-offset="1560">
+            <state line="144" column="43" selection-start="6238" selection-end="6238" vertical-scroll-proportion="-32.708332" vertical-offset="1375" max-vertical-offset="2445">
               <folding />
             </state>
           </provider>
@@ -51,7 +44,7 @@
       <file leaf-file-name="RFDeduct.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RFDeduct.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="73" selection-start="3633" selection-end="3633" vertical-scroll-proportion="-10.0" vertical-offset="1260" max-vertical-offset="1875">
+            <state line="95" column="41" selection-start="3743" selection-end="3743" vertical-scroll-proportion="-8.333333" vertical-offset="1225" max-vertical-offset="1995">
               <folding />
             </state>
           </provider>
@@ -60,7 +53,7 @@
       <file leaf-file-name="Data_list.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Data_list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="191" column="28" selection-start="4198" selection-end="4198" vertical-scroll-proportion="0.0" vertical-offset="2358" max-vertical-offset="3015">
+            <state line="196" column="103" selection-start="11544" selection-end="11544" vertical-scroll-proportion="0.0" vertical-offset="3045" max-vertical-offset="3945">
               <folding />
             </state>
           </provider>
@@ -69,16 +62,16 @@
       <file leaf-file-name="Data_render.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/Data_render.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="36" selection-start="3796" selection-end="3796" vertical-scroll-proportion="0.5904437" vertical-offset="1319" max-vertical-offset="2040">
+            <state line="102" column="31" selection-start="3631" selection-end="3631" vertical-scroll-proportion="2.0238907" vertical-offset="344" max-vertical-offset="1995">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Calculator.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/tests/Calculator.js">
+      <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="510">
+            <state line="79" column="0" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.0" vertical-offset="753" max-vertical-offset="1425">
               <folding />
             </state>
           </provider>
@@ -108,16 +101,16 @@
         <option value="$PROJECT_DIR$/sample.html" />
         <option value="$PROJECT_DIR$/NumberOnly.js" />
         <option value="$PROJECT_DIR$/customer.home.html" />
-        <option value="$PROJECT_DIR$/main.html" />
         <option value="$PROJECT_DIR$/tests/1.html" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/2.html" />
         <option value="$PROJECT_DIR$/css/form.css" />
         <option value="$PROJECT_DIR$/tests/Calculator.js" />
-        <option value="$PROJECT_DIR$/rf.html" />
+        <option value="$PROJECT_DIR$/main.html" />
         <option value="$PROJECT_DIR$/exp.report.html" />
-        <option value="$PROJECT_DIR$/RFDeduct.html" />
+        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/tests/Data_list.js" />
+        <option value="$PROJECT_DIR$/rf.html" />
+        <option value="$PROJECT_DIR$/RFDeduct.html" />
         <option value="$PROJECT_DIR$/tests/Data_render.js" />
       </list>
     </option>
@@ -345,7 +338,11 @@
       <created>1381858957666</created>
       <updated>1381858957666</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="hidden">
+      <created>1381865631120</created>
+      <updated>1381865631120</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -405,13 +402,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/sample.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="163" column="0" selection-start="4417" selection-end="4417" vertical-scroll-proportion="-50.0" vertical-offset="1245" max-vertical-offset="2670">
@@ -429,20 +419,6 @@
     <entry file="file://$PROJECT_DIR$/tests/1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="619" selection-end="619" vertical-scroll-proportion="-3.25" vertical-offset="222" max-vertical-offset="810">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="9" selection-start="343" selection-end="343" vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="525">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="0" selection-start="1128" selection-end="1128" vertical-scroll-proportion="1.2990196" vertical-offset="420" max-vertical-offset="1350">
           <folding />
         </state>
       </provider>
@@ -468,37 +444,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rf.html">
+    <entry file="file://$PROJECT_DIR$/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="37" selection-start="1830" selection-end="1830" vertical-scroll-proportion="0.5" vertical-offset="882" max-vertical-offset="2160">
+        <state line="11" column="9" selection-start="389" selection-end="389" vertical-scroll-proportion="0.28061223" vertical-offset="0" max-vertical-offset="588">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="795">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="0" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.0" vertical-offset="753" max-vertical-offset="1425">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exp.report.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="0" selection-start="1851" selection-end="1851" vertical-scroll-proportion="-22.5" vertical-offset="255" max-vertical-offset="1560">
+        <state line="21" column="81" selection-start="1098" selection-end="1098" vertical-scroll-proportion="-0.57391304" vertical-offset="645" max-vertical-offset="1635">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RFDeduct.html">
+    <entry file="file://$PROJECT_DIR$/rf.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="73" selection-start="3633" selection-end="3633" vertical-scroll-proportion="-10.0" vertical-offset="1260" max-vertical-offset="1875">
+        <state line="144" column="43" selection-start="6238" selection-end="6238" vertical-scroll-proportion="-32.708332" vertical-offset="1375" max-vertical-offset="2445">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Data_list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="191" column="28" selection-start="4198" selection-end="4198" vertical-scroll-proportion="0.0" vertical-offset="2358" max-vertical-offset="3015">
+        <state line="196" column="103" selection-start="11544" selection-end="11544" vertical-scroll-proportion="0.0" vertical-offset="3045" max-vertical-offset="3945">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RFDeduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="95" column="41" selection-start="3743" selection-end="3743" vertical-scroll-proportion="-8.333333" vertical-offset="1225" max-vertical-offset="1995">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Data_render.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="36" selection-start="3796" selection-end="3796" vertical-scroll-proportion="0.5904437" vertical-offset="1319" max-vertical-offset="2040">
+        <state line="102" column="31" selection-start="3631" selection-end="3631" vertical-scroll-proportion="2.0238907" vertical-offset="344" max-vertical-offset="1995">
           <folding />
         </state>
       </provider>
