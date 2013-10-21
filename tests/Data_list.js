@@ -225,12 +225,11 @@ Anna.Forms.Data = {
     },
     form8 : {
         a01 : {
-            name : "Билеты",
-            value : "1"
+            name : "Билеты"
+
         },
         a02 : {
-            name : "Проживание",
-            value : "2"
+            name : "Проживание"
         }
     },
     form9 : {

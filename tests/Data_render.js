@@ -89,39 +89,46 @@ Anna.FormRender = {
     return resultFunction;
   },
 
-  renderTypeOfExpense : function (elementToInsert, renderData) {
-    var container = $("<option></option>");
-    elementToInsert.append(container);
-    container.append($("<p>Вид расхода:</p>"));
+ renderTypeOfExpense : function (listToInsert, renderFormData) {
+    var container1 = $("<div> <select> <option></option> </select> </div>");
+     listToInsert.append(container1);
 
-       var nam = container.val("<option></option>");
-       nam.text(renderData.name);
-        container.empty();
-        $.each(renderData, function(idx, renderData) {
-            container.append($("<option value = " +'name'+ "></option>",{
-                value: this.value,
-                item: this.name
-            }));
-            drop.items[idx] = Anna.FormRender.renderTypeOfExpense (container, renderData);
-        });
+    var Dlist = container1.find ("option");
+     Dlist.text(renderFormData.name);
 
-//    container.append($("<button class = 'ok'>OK</button>"));
+    var state1 = function() {
+        return Dlist.is("selected", false);
+    };
+ },
 
- //   container.find("button.ok").click(function() {
- //       var target_6 = container.val ();
- //       if (target_6 === "1") {
-  //          resultFunction.nextClick = function(handler) {
-  //              container.find("button.ok").click(handler);
-  //          };
-  //      } else {
-  //          alert("Not implemented! Choose option!!")
-  //      }
-  //      return false;
-//
-//    });
+renderExpenseOne : function (listToInsert, renderData) {
+    var el1 = $("<div></div>");
+      listToInsert.append(el1);
 
-  }
+    var select1 = {
+        items1 : {},
+        selector : function(idx1){$.each.items1 (this.attr(idx1, renderData))}
+    };
+
+      $.each(renderData, function(idx1, renderFormData) {
+         select1.items1[idx1] = Anna.FormRender.renderTypeOfExpense(el1, renderFormData);
+      });
 
 
+//    renderData.data(Anna.Forms.Data.name);
+//        el1.fill(function(){
+//          el1.select(function(renderData){
+//        return renderData.text = Anna.FormRender.renderTypeOfExpense (el1, renderFormData);
+//    })
 
+//        });
+      }
 };
+
+
+
+
+
+
+
+

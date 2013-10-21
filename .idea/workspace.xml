@@ -5,10 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Data_list.js" afterPath="$PROJECT_DIR$/tests/Data_list.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Data_render.js" afterPath="$PROJECT_DIR$/tests/Data_render.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RFDeduct.html" afterPath="$PROJECT_DIR$/RFDeduct.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exp.report.html" afterPath="$PROJECT_DIR$/exp.report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rf.html" afterPath="$PROJECT_DIR$/rf.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="check list.iws" />
@@ -35,7 +31,7 @@
       <file leaf-file-name="rf.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rf.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="144" column="43" selection-start="6238" selection-end="6238" vertical-scroll-proportion="-32.708332" vertical-offset="1375" max-vertical-offset="2445">
+            <state line="144" column="43" selection-start="6238" selection-end="6238" vertical-scroll-proportion="-50.208332" vertical-offset="955" max-vertical-offset="2445">
               <folding />
             </state>
           </provider>
@@ -44,7 +40,7 @@
       <file leaf-file-name="RFDeduct.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RFDeduct.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="95" column="41" selection-start="3743" selection-end="3743" vertical-scroll-proportion="-8.333333" vertical-offset="1225" max-vertical-offset="1995">
+            <state line="67" column="101" selection-start="2871" selection-end="2871" vertical-scroll-proportion="14.166667" vertical-offset="1345" max-vertical-offset="1995">
               <folding />
             </state>
           </provider>
@@ -53,7 +49,7 @@
       <file leaf-file-name="Data_list.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Data_list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="196" column="103" selection-start="11544" selection-end="11544" vertical-scroll-proportion="0.0" vertical-offset="3045" max-vertical-offset="3945">
+            <state line="227" column="27" selection-start="12316" selection-end="12316" vertical-scroll-proportion="0.0" vertical-offset="3256" max-vertical-offset="3930">
               <folding />
             </state>
           </provider>
@@ -62,7 +58,7 @@
       <file leaf-file-name="Data_render.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/Data_render.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="102" column="31" selection-start="3631" selection-end="3631" vertical-scroll-proportion="2.0238907" vertical-offset="344" max-vertical-offset="1995">
+            <state line="106" column="0" selection-start="3596" selection-end="3596" vertical-scroll-proportion="0.3872549" vertical-offset="1353" max-vertical-offset="2100">
               <folding />
             </state>
           </provider>
@@ -108,9 +104,9 @@
         <option value="$PROJECT_DIR$/main.html" />
         <option value="$PROJECT_DIR$/exp.report.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/tests/Data_list.js" />
         <option value="$PROJECT_DIR$/rf.html" />
         <option value="$PROJECT_DIR$/RFDeduct.html" />
+        <option value="$PROJECT_DIR$/tests/Data_list.js" />
         <option value="$PROJECT_DIR$/tests/Data_render.js" />
       </list>
     </option>
@@ -342,7 +338,11 @@
       <created>1381865631120</created>
       <updated>1381865631120</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="hidden">
+      <created>1381945588669</created>
+      <updated>1381945588669</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -474,28 +474,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/rf.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="43" selection-start="6238" selection-end="6238" vertical-scroll-proportion="-32.708332" vertical-offset="1375" max-vertical-offset="2445">
+        <state line="144" column="43" selection-start="6238" selection-end="6238" vertical-scroll-proportion="-50.208332" vertical-offset="955" max-vertical-offset="2445">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Data_list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="103" selection-start="11544" selection-end="11544" vertical-scroll-proportion="0.0" vertical-offset="3045" max-vertical-offset="3945">
+        <state line="227" column="27" selection-start="12316" selection-end="12316" vertical-scroll-proportion="0.0" vertical-offset="3061" max-vertical-offset="3930">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RFDeduct.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="41" selection-start="3743" selection-end="3743" vertical-scroll-proportion="-8.333333" vertical-offset="1225" max-vertical-offset="1995">
+        <state line="67" column="101" selection-start="2871" selection-end="2871" vertical-scroll-proportion="14.166667" vertical-offset="1345" max-vertical-offset="1995">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Data_render.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="31" selection-start="3631" selection-end="3631" vertical-scroll-proportion="2.0238907" vertical-offset="344" max-vertical-offset="1995">
+        <state line="106" column="0" selection-start="3596" selection-end="3596" vertical-scroll-proportion="0.3872549" vertical-offset="1353" max-vertical-offset="2100">
           <folding />
         </state>
       </provider>

@@ -32,15 +32,15 @@
     <button id="choose1" value="choose1" name="choose1">Choose expense</button>
 </div>
 <div id="tipeVer" class="block">
-    <select id="verTipe"></select>
- <!---   <h3><label for="verTipe">Вид расхода:</label></h3>
-      <select id="verTipe">
-        <option value=""></option>
-        <option value="1">Билеты</option>
-        <option value="2">Проживание</option>
-        <option value="3">Трансфер</option>
-      </select>
-      <button id="ok1" value="ok1" name="ok1">OK</button> !--->
+    <!---     <select id="verTipe"></select>
+     <h3><label for="verTipe">Вид расхода:</label></h3>
+         <select id="verTipe">
+           <option value=""></option>
+           <option value="1">Билеты</option>
+           <option value="2">Проживание</option>
+           <option value="3">Трансфер</option>
+         </select>
+         <button id="ok1" value="ok1" name="ok1">OK</button> !--->
 </div>
 <br/>
 <div id="tickets" class="hidden block"></div>
@@ -61,11 +61,11 @@
             if(text == 1){
                 $("#result").show();
                 $("#button").show();
-                $("#result span.place1").text("LO   " + "250   " + "PIT");
+                $("#result span.place1").text("Налоговый код - LO   " + "250   " + "PIT");
             } else if(text >= 2){
                 $("#result").show();
                 $("#button").show();
-                $("#result span.place1").text("P0   " + "500" * text);
+                $("#result span.place1").text("Налоговый код - P0" + "сумма суточных -" +"500" * text);
             } else {
                 alert("Please select the number of days!");
             }
@@ -106,7 +106,7 @@
     $("div.hidden").hide();
     var handle_5 = Anna.FormRender.renderCheckboxSection($("div#tickets"), Anna.Forms.Data.form7);
     var handle_6 = Anna.FormRender.renderCheckboxSection($("div#accomodation"), Anna.Forms.Data.form9);
-    var handle_7 = Anna.FormRender.renderTypeOfExpense($("div#verTipe"), Anna.Forms.Data.form8);
+    var handle_7 = Anna.FormRender.renderExpenseOne($("div#tipeVer"), Anna.Forms.Data.form8);
 
 
     handle_5.nextClick(function () {
