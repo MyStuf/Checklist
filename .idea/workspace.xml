@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1416440-3d94-48da-b0a7-f45a5218b9fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Data_list.js" afterPath="$PROJECT_DIR$/tests/Data_list.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Data_render.js" afterPath="$PROJECT_DIR$/tests/Data_render.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RFDeduct.html" afterPath="$PROJECT_DIR$/RFDeduct.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="check list.iws" />
@@ -40,10 +38,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RFDeduct.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RFDeduct.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RFDeduct.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="111" column="19" selection-start="4332" selection-end="4332" vertical-scroll-proportion="0.44174758" vertical-offset="1392" max-vertical-offset="2025">
+            <state line="111" column="19" selection-start="4332" selection-end="4332" vertical-scroll-proportion="-11.375" vertical-offset="1392" max-vertical-offset="2025">
               <folding />
             </state>
           </provider>
@@ -58,10 +56,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Data_render.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Data_render.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tests/Data_render.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="0" selection-start="3085" selection-end="3085" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="2010">
+            <state line="120" column="0" selection-start="4021" selection-end="4021" vertical-scroll-proportion="0.8130841" vertical-offset="1278" max-vertical-offset="2010">
               <folding />
             </state>
           </provider>
@@ -109,8 +107,8 @@
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/rf.html" />
         <option value="$PROJECT_DIR$/tests/Data_list.js" />
-        <option value="$PROJECT_DIR$/tests/Data_render.js" />
         <option value="$PROJECT_DIR$/RFDeduct.html" />
+        <option value="$PROJECT_DIR$/tests/Data_render.js" />
       </list>
     </option>
   </component>
@@ -353,13 +351,18 @@
       <created>1382459843173</created>
       <updated>1382459843173</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="hidden">
+      <created>1382981091686</created>
+      <updated>1382981091686</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="62" y="22" width="1218" height="778" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.06880734" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -374,7 +377,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -426,7 +428,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="36" selection-start="4425" selection-end="4425" vertical-scroll-proportion="-15.125" vertical-offset="1767" max-vertical-offset="2355" />
+        <state line="142" column="36" selection-start="4425" selection-end="4425" vertical-scroll-proportion="-15.125" vertical-offset="1767" max-vertical-offset="2355">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/sample.html">
@@ -467,7 +471,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="389" selection-end="389" vertical-scroll-proportion="0.28061223" vertical-offset="0" max-vertical-offset="588" />
+        <state line="11" column="9" selection-start="389" selection-end="389" vertical-scroll-proportion="0.28061223" vertical-offset="0" max-vertical-offset="588">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/server/server.js">
@@ -503,16 +509,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Data_render.js">
+    <entry file="file://$PROJECT_DIR$/RFDeduct.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="3085" selection-end="3085" vertical-scroll-proportion="0.0" vertical-offset="960" max-vertical-offset="2010">
+        <state line="111" column="19" selection-start="4332" selection-end="4332" vertical-scroll-proportion="-11.375" vertical-offset="1392" max-vertical-offset="2025">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RFDeduct.html">
+    <entry file="file://$PROJECT_DIR$/tests/Data_render.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="111" column="19" selection-start="4332" selection-end="4332" vertical-scroll-proportion="0.44174758" vertical-offset="1392" max-vertical-offset="2025">
+        <state line="120" column="0" selection-start="4021" selection-end="4021" vertical-scroll-proportion="0.8130841" vertical-offset="1278" max-vertical-offset="2010">
           <folding />
         </state>
       </provider>
