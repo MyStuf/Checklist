@@ -225,7 +225,7 @@ Anna.Forms.Data = {
     },
     form8 : {
         a01 : {
-            name : "Билеты", 
+            name : "Билеты",
             value : "1"
 
         },
@@ -236,25 +236,25 @@ Anna.Forms.Data = {
     },
     form9 : {
         f1 : {
-            name : "Раз",
+            name : "Раз1",
             checked : "все ок",
             unchecked : "не все ок"
         },
         f2:
         {
-            name : "Два",
+            name : "Два1",
             checked : "все ок",
             unchecked : "не все ок"
         },
         f3:
         {
-            name : "Три",
+            name : "Три1",
             checked : "все ок",
             unchecked : "не все ок"
         },
         f4:
         {
-            name : "Четыре",
+            name : "Четыре1",
             checked : "все ок",
             unchecked : "не все ок"
         }

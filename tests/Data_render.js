@@ -85,12 +85,14 @@ Anna.FormRender = {
 
     resultFunction.nextClick = function(handler) {
       container.find("button.next").click(handler);
+
+
     };
     return resultFunction;
   },
 
  renderTypeOfExpense : function (listToInsert, renderFormData) {
-    var container1 = $("<div> <select> <option value=\'{{= Value}}\'>{{name}}</option> </select> </div>");
+    var container1 = $("<div> <select> <option value=\'{{= Value}}\'>{{=name}}</option><option value=\'{{= Value}}\'>{{name}}</option> </select> </div>");
      listToInsert.append(container1);
 
      var Dlist = container1.find ("option");
@@ -109,11 +111,11 @@ renderExpenseOne : function (listToInsert, renderData) {
     var el1 = $("<div></div>");
         listToInsert.append(el1);
 
-    var state1 = [];
+    var state1 = [name];
         $.each(renderData, function(idx1, renderFormData) {
          state1.items[idx1] = Anna.FormRender.renderTypeOfExpense(el1, renderFormData);
         });
-    el1.html(state1.join(''));
+
 }
 };
 
