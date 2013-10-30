@@ -53,6 +53,8 @@
     $("#tipeVer").hide ();
     $("#cal").ForceNumericOnly();
 
+     /// это работать не будет. Ты слушаешь кнопку на !всем! документе, а нужно это делать только на
+     /// определенном элементе. Вместо document нужно написать что-то по проще
         $(document).keyup(function(event) {
         if (event.keyCode == 13 || event.keyCode == 10) {
             $("#text").submit();
