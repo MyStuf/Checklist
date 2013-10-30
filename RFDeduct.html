@@ -32,6 +32,8 @@
     <button id="choose1" value="choose1" name="choose1">Choose expense</button>
 </div>
 
+<a href="#" class="test">Test</a>
+
 <div id="tipeVer" ></div>
 
 <br/>
@@ -90,8 +92,12 @@
     var handle_6 = Anna.FormRender.renderCheckboxSection($("div#accomodation"), Anna.Forms.Data.form9);
 
     //вот тут будем хранить результаты
-    var selectionResults = {};
-
+    var selectionResults = {
+       /// по каждому варианты будем хранить массив результатов
+      "1"  : [],
+      "2"  : [],
+      "3"  : []
+    };
 
     var renderCheckboxSection = function(rootContainer) {
       var handle_5_container = $("<div class='block'></div>");
@@ -102,7 +108,7 @@
       handle_select.nextClick(function () {
         if (handle_select() === "1") {
           /// если выбрали первый вариант - создаем рядом форму для первого варианта
-          renderSelect5(rootContainer);
+          renderSelect5(selectionResults["1"], rootContainer);
         } else {
           alert("Not implemented! Choose option!!")
         }
@@ -110,13 +116,16 @@
       })
     };
 
-    var renderSelect5 = function(rootContainer) {
+    var renderSelect5 = function(resultsArray, rootContainer) {
       var handle_checkbox_container = $("<div class='block'></div>");
       rootContainer.append(handle_checkbox_container);
 
       //вот тут просим форму созаться
       var handle_5 = Anna.FormRender.renderCheckboxSection(handle_checkbox_container, Anna.Forms.Data.form7);
       handle_5.nextClick(function () {
+
+        ///добавляем в массив результатов значения, выбранные в чекбоксе
+        resultsArray.push(handle_5());
         ///на дальше по циклу
         renderCheckboxSection(rootContainer);
       });
@@ -125,7 +134,7 @@
     $("a.test").click(function () {
         alert(JSON.stringify(
                 {
-                    form_6: handle_5 ()
+                    all : selectionResults
                 }
         ));
         return false;
