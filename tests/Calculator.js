@@ -23,8 +23,10 @@ jQuery.fn.CalculatorFirst =
                 } else {
                     alert("Please select the number of days!");
                 }
-                return false;
-            } });
+
+            }
+            return false;
+        });
 
      container.append($("<button class='ok' disabled='disabled'>OK</button>"));
 };
