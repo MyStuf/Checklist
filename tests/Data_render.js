@@ -83,6 +83,11 @@ Anna.FormRender = {
           return result;
       };
 
+    resultFunction.setDisabled = function() {
+      container.find("button").attr("disabled", "disabled");
+      container.find("checkbox").attr("disabled", "disabled");
+    };
+
     resultFunction.nextClick = function(handler) {
       container.find("button.next").click(handler);
     };
