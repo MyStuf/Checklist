@@ -68,6 +68,7 @@
             }
     });
         $("#ok").click(function(){
+          $(this).attr("disabled", "disabled");
             var text = $("#text").val() ;
             if(text == 1){
                 $("#result").show();
@@ -83,6 +84,7 @@
         });
 
         $("#choose1").click(function(){
+          $(this).attr("disabled", "disabled");
           ///вот тут мы показываем выбиралку выкидуху
           renderCheckboxSection($("div#tipeVer"));
         });
@@ -106,6 +108,8 @@
       //вот тут просим выкидуху создаться
       var handle_select = Anna.FormRender.renderSelectControl(handle_5_container, Anna.Forms.Data.checkboxData1);
       handle_select.nextClick(function () {
+        //выключаем вообще все контролы
+        handle_select.setDisabled();
         if (handle_select() === "1") {
           /// если выбрали первый вариант - создаем рядом форму для первого варианта
           renderSelect5(selectionResults["1"], rootContainer);
@@ -123,7 +127,8 @@
       //вот тут просим форму созаться
       var handle_5 = Anna.FormRender.renderCheckboxSection(handle_checkbox_container, Anna.Forms.Data.form7);
       handle_5.nextClick(function () {
-
+        //выключаем вообще все контролы на handle_5
+        handle_5.setDisabled();
         ///добавляем в массив результатов значения, выбранные в чекбоксе
         resultsArray.push(handle_5());
         ///на дальше по циклу
