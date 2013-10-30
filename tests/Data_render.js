@@ -2,7 +2,7 @@ if (null == Anna) var Anna = {};
 
 Anna.FormRender = {
   renderOneCheckboxSection : function(elementToInsert, checkboxData) {
-      var el = $("<div><input type='checkbox'> <label></label>  <span></span> <span></span> </div>");
+      var el = $("<div><input type='checkbox'> <label></label> </br> <span></span> <span></span> </div>");
       elementToInsert.append(el);
 
       var first = el.find("span:first");
@@ -15,6 +15,13 @@ Anna.FormRender = {
       first.text(checkboxData.checked);
       last.text(checkboxData.unchecked);
       el.find("label").text(checkboxData.name);
+      last.css({"color":"red",
+      "white-space": "pre-wrap"
+
+      });
+      first.css({
+          "color":"green"
+      });
 
       var state = function() {
           return checkbox.is(":checked");
@@ -77,8 +84,8 @@ Anna.FormRender = {
       var resultFunction = function() {
           var result = {};
           $.each(state.items, function(idx, item) {
-              result[idx] = item.value();
-              result[idx + "__state"] = item.state();
+              result = item.value();
+          //    result[idx + "__state"] = item.state();
           });
           return result;
       };

@@ -7,6 +7,7 @@ body {
   font-size: 82%;
   line-height: 1.5em;
   color: #151515;
+  margin-left: 10px;
 }
 
 input, select, button {
@@ -77,13 +78,13 @@ input[type='checkbox'], input[type='radio'] {
   margin-left: 0;
 }
 
-
-
 input[disabled] {
   background-color: #F9F9F9;
   color: #999;
   border-color: #CCC #DDD #DDD;
 }
+
+
 
 
 
