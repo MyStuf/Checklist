@@ -89,34 +89,42 @@ Anna.FormRender = {
 
     };
     return resultFunction;
+  },
+
+
+  renderSelectControl: function (listToInsert, renderFormData) {
+    var container1 = $("<div> <span></span><select> <option>-- Выберите --</option> </select> <button></button></div>");
+    listToInsert.append(container1);
+
+    container1.find("span").text(renderFormData.name);
+    var theSelect = container1.find("select");
+
+    $.each(renderFormData.items, function (value, text) {
+      var opt = $("<option />");
+      opt.text(text);
+      opt.attr("value", value);
+
+      theSelect.append(opt);
+    });
+
+    var theButton = container1.find("button");
+    theButton.text(renderFormData.buttonName);
+
+    var resultFunction = function() {
+      return theSelect.val();
+    };
+
+    resultFunction.setDisabled = function() {
+      theSelect.attr("disabled", "disabled");
+      theButton.attr("disabled", "disabled");
+    };
+
+    resultFunction.nextClick = function(handler) {
+      container1.find("button").click(handler);
+    };
+
+    return resultFunction ;
   }
-
-
-// renderTypeOfExpense : function (listToInsert, renderFormData) {
-//    var container1 = $("<div> <select> <option value=\'{{= Value}}\'>{{=name}}</option><option value=\'{{= Value}}\'>{{name}}</option> </select> </div>");
-//     listToInsert.append(container1);
-
-//     var Dlist = container1.find ("option");
-//     Dlist.text(renderFormData.name);
-
-//     $.each(renderFormData, function(name, value) {
-//             container1
-//                 .append(container1, {
-//                 value : value,
-//                 name : name
-//     });
-//});
-// },
-
-// renderExpenseOne : function (listToInsert, renderData) {
-//    var el1 = $("<div></div>");
-//        listToInsert.append(el1);
-
-//    var state1 = [name];
-//        $.each(renderData, function(idx1, renderFormData) {
-//         state1.items[idx1] = Anna.FormRender.renderTypeOfExpense(el1, renderFormData);
-//        });
-//}
 };
 
 

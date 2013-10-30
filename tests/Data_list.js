@@ -258,8 +258,19 @@ Anna.Forms.Data = {
             checked : "все ок",
             unchecked : "не все ок"
         }
-    }
+    },
 
+
+
+  checkboxData1 : {
+    name : "Вид расхода",
+    buttonName : "OK",
+    items : {
+         "1" : "Билеты",
+         "2" : "Проживание",
+         "3" : "Трансфер"
+       }
+  }
 
 };
 
