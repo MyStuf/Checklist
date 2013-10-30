@@ -85,19 +85,21 @@ Anna.FormRender = {
 
     resultFunction.nextClick = function(handler) {
       container.find("button.next").click(handler);
-
-
     };
+
+    $('html, body').animate({
+      scrollTop: container.offset().top
+    }, 500);
     return resultFunction;
   },
 
 
   renderSelectControl: function (listToInsert, renderFormData) {
-    var container1 = $("<div> <span></span><select> <option>-- Выберите --</option> </select> <button></button></div>");
-    listToInsert.append(container1);
+    var container = $("<div> <span></span><select> <option>-- Выберите --</option> </select> <button></button></div>");
+    listToInsert.append(container);
 
-    container1.find("span").text(renderFormData.name);
-    var theSelect = container1.find("select");
+    container.find("span").text(renderFormData.name);
+    var theSelect = container.find("select");
 
     $.each(renderFormData.items, function (value, text) {
       var opt = $("<option />");
@@ -107,7 +109,7 @@ Anna.FormRender = {
       theSelect.append(opt);
     });
 
-    var theButton = container1.find("button");
+    var theButton = container.find("button");
     theButton.text(renderFormData.buttonName);
 
     var resultFunction = function() {
@@ -120,8 +122,12 @@ Anna.FormRender = {
     };
 
     resultFunction.nextClick = function(handler) {
-      container1.find("button").click(handler);
+      container.find("button").click(handler);
     };
+
+    $('html, body').animate({
+      scrollTop: container.offset().top
+    }, 500);
 
     return resultFunction ;
   }
