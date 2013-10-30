@@ -31,16 +31,7 @@
     <br/>
     <button id="choose1" value="choose1" name="choose1">Choose expense</button>
 </div>
-<div id="tipeVer" class="block">
-     <h3><label for="vType">Вид расхода:</label></h3>
-         <select id="vType">
-           <option value=""></option>
-           <option value="1">Билеты</option>
-           <option value="2">Проживание</option>
-           <option value="3">Трансфер</option>
-         </select>
-         <button id="ok1" value="ok1" name="ok1">OK</button>
-</div>
+<div id="tipeVer" class="hidden block"></div>
 <br/>
 <div id="tickets" class="hidden block"></div>
 <div id="accomodation" class="hidden block"></div>
@@ -50,7 +41,6 @@
     $(function () {
     $("#button").hide();
     $("#result").hide();
-    $("#tipeVer").hide ();
     $("#cal").ForceNumericOnly();
 
      /// это работать не будет. Ты слушаешь кнопку на !всем! документе, а нужно это делать только на
@@ -92,23 +82,20 @@
             $("#tipeVer").show();
         });
     });
-        $("#ok1").click(function(){
-            var target_6 = $("#vType");
-            if (target_6.val() === "1") {
-                $("#tickets").show();
-                $(this).prop('disabled', 'disabled');
-                target_6.prop('disabled', 'disabled');
-            } else {
-                alert("Not implemented! Choose option!!")
-            }
-            return false;
-
-        });
     $("div.hidden").hide();
     var handle_5 = Anna.FormRender.renderCheckboxSection($("div#tickets"), Anna.Forms.Data.form7);
     var handle_6 = Anna.FormRender.renderCheckboxSection($("div#accomodation"), Anna.Forms.Data.form9);
+    var handle_select = Anna.FormRender.renderSelectControl($("div#tipeVer"), Anna.Forms.Data.checkboxData1);
 
-
+    handle_select.nextClick(function(){
+      if (handle_select() === "1") {
+        $("#tickets").show();
+        handle_select.setDisabled();
+      } else {
+        alert("Not implemented! Choose option!!")
+      }
+      return false;
+    });
 
     handle_5.nextClick(function () {
         $("#vType").clone(true).appendTo("#clone1");
