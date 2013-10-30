@@ -47,9 +47,7 @@
     $("#result").hide();
     $("#cal").ForceNumericOnly();
 
-     /// это работать не будет. Ты слушаешь кнопку на !всем! документе, а нужно это делать только на
-     /// определенном элементе. Вместо document нужно написать что-то по проще
-        $(document).keyup(function(event) {
+        $("#cal").keyup(function(event) {
         if (event.keyCode == 13 || event.keyCode == 10) {
             $("#text").submit();
             var text = $("#text").val() ;
@@ -93,9 +91,7 @@
 
     var handle_6 = Anna.FormRender.renderCheckboxSection($("div#accomodation"), Anna.Forms.Data.form9);
 
-    //вот тут будем хранить результаты
     var selectionResults = {
-       /// по каждому варианты будем хранить массив результатов
       "1"  : [],
       "2"  : [],
       "3"  : []
