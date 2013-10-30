@@ -108,9 +108,9 @@
       //вот тут просим выкидуху создаться
       var handle_select = Anna.FormRender.renderSelectControl(handle_5_container, Anna.Forms.Data.checkboxData1);
       handle_select.nextClick(function () {
-        //выключаем вообще все контролы
-        handle_select.setDisabled();
         if (handle_select() === "1") {
+          //выключаем вообще все контролы
+          handle_select.setDisabled();
           /// если выбрали первый вариант - создаем рядом форму для первого варианта
           renderSelect5(selectionResults["1"], rootContainer);
         } else {
