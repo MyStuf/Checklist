@@ -5,14 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1416440-3d94-48da-b0a7-f45a5218b9fb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Data_list.js" afterPath="$PROJECT_DIR$/tests/Data_list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Data_render.js" afterPath="$PROJECT_DIR$/tests/Data_render.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RFDeduct.html" afterPath="$PROJECT_DIR$/RFDeduct.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exp.report.html" afterPath="$PROJECT_DIR$/exp.report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/form.css" afterPath="$PROJECT_DIR$/css/form.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rf.html" afterPath="$PROJECT_DIR$/rf.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="check list.iws" />
@@ -45,19 +38,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RFDeduct.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="RFDeduct.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/RFDeduct.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="161" column="586" selection-start="7731" selection-end="7731" vertical-scroll-proportion="-14.5" vertical-offset="2067" max-vertical-offset="3060">
+            <state line="146" column="847" selection-start="6463" selection-end="6463" vertical-scroll-proportion="0.84951454" vertical-offset="1665" max-vertical-offset="3060">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="12" selection-start="827" selection-end="827" vertical-scroll-proportion="0.57052296" vertical-offset="0" max-vertical-offset="631">
+            <state line="23" column="18" selection-start="687" selection-end="805" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="525">
               <folding />
             </state>
           </provider>
@@ -132,8 +125,8 @@
         <option value="$PROJECT_DIR$/rf.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/tests/Data_list.js" />
-        <option value="$PROJECT_DIR$/RFDeduct.html" />
         <option value="$PROJECT_DIR$/main.html" />
+        <option value="$PROJECT_DIR$/RFDeduct.html" />
       </list>
     </option>
   </component>
@@ -392,13 +385,18 @@
       <created>1383162763081</created>
       <updated>1383162763081</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="hidden">
+      <created>1384103240674</created>
+      <updated>1384103240674</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="62" y="22" width="1218" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.06880734" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -413,7 +411,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -533,13 +530,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RFDeduct.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="161" column="586" selection-start="7731" selection-end="7731" vertical-scroll-proportion="-14.5" vertical-offset="2067" max-vertical-offset="3060">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="72" column="16" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1695">
@@ -549,7 +539,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="12" selection-start="827" selection-end="827" vertical-scroll-proportion="0.57052296" vertical-offset="0" max-vertical-offset="631">
+        <state line="23" column="18" selection-start="687" selection-end="805" vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="525">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RFDeduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="146" column="847" selection-start="6463" selection-end="6463" vertical-scroll-proportion="0.84951454" vertical-offset="1665" max-vertical-offset="3060">
           <folding />
         </state>
       </provider>
