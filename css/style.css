@@ -40,6 +40,7 @@ h1 {
   padding: 2em 0 0 0;
   text-align: center;
   margin: 0 auto;
+  color: #2e8b57;
 }
 
 h2 {
@@ -53,9 +54,25 @@ h2 {
 h3 {
   font-size: 100%;
 }
-h4 {
+
+h5 {
+    padding: 2em 0 0 0;
+    text-align: center;
+    margin: 0 auto;
+    color: #2e8b57;
+    font-size: 250%;
+}
+
+h6 {
     font-size: 120%;
     text-align: center;
+    color: #2e8b57;
+}
+
+h4 {
+    font-size: 90%;
+    text-align: right;
+    color: darkseagreen;
 }
 /* Normalize styling of form elements */
 form {

@@ -54,7 +54,7 @@ Anna.FormRender = {
       var container = $("<div></div>");
       elementToInsert.append(container);
 
-      container.append($("<p>Проверьте, что критерии соотвертвуют:</p>"));
+ //     container.append($("<p>Проверьте, что критерии соотвертвуют:</p>"));
       //generate data for checkboxes
       var state = {
           items : {},

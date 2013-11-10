@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/tests/Data_list.js" description="f1 : {" line="241" />
+    <bookmark url="file://$PROJECT_DIR$/tests/Data_list.js" description="f1 : {" line="245" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1416440-3d94-48da-b0a7-f45a5218b9fb" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Data_list.js" afterPath="$PROJECT_DIR$/tests/Data_list.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/Data_render.js" afterPath="$PROJECT_DIR$/tests/Data_render.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/RFDeduct.html" afterPath="$PROJECT_DIR$/RFDeduct.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/exp.report.html" afterPath="$PROJECT_DIR$/exp.report.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/form.css" afterPath="$PROJECT_DIR$/css/form.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.html" afterPath="$PROJECT_DIR$/main.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rf.html" afterPath="$PROJECT_DIR$/rf.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -37,7 +39,7 @@
       <file leaf-file-name="rf.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rf.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="141" column="10" selection-start="6112" selection-end="6132" vertical-scroll-proportion="-11.0" vertical-offset="1851" max-vertical-offset="2445">
+            <state line="83" column="41" selection-start="5060" selection-end="5060" vertical-scroll-proportion="-51.875" vertical-offset="0" max-vertical-offset="2730">
               <folding />
             </state>
           </provider>
@@ -46,7 +48,16 @@
       <file leaf-file-name="RFDeduct.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RFDeduct.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="166" column="18" selection-start="8753" selection-end="8753" vertical-scroll-proportion="-12.875" vertical-offset="2181" max-vertical-offset="2775">
+            <state line="161" column="586" selection-start="7731" selection-end="7731" vertical-scroll-proportion="-14.5" vertical-offset="2067" max-vertical-offset="3060">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/main.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="12" selection-start="827" selection-end="827" vertical-scroll-proportion="0.57052296" vertical-offset="0" max-vertical-offset="631">
               <folding />
             </state>
           </provider>
@@ -55,16 +66,16 @@
       <file leaf-file-name="Data_list.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Data_list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="47" column="20" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="4290">
+            <state line="273" column="103" selection-start="16829" selection-end="16829" vertical-scroll-proportion="0.0" vertical-offset="3468" max-vertical-offset="4350">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Data_render.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Data_render.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tests/Data_render.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="90" column="8" selection-start="3110" selection-end="3110" vertical-scroll-proportion="2.1844661" vertical-offset="0" max-vertical-offset="2400">
+            <state line="56" column="3" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.0" vertical-offset="1665" max-vertical-offset="2400">
               <folding />
             </state>
           </provider>
@@ -73,7 +84,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="58" column="1" selection-start="823" selection-end="823" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1440">
+            <state line="72" column="16" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1695">
               <folding />
             </state>
           </provider>
@@ -82,7 +93,7 @@
       <file leaf-file-name="form.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/form.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="1" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
+            <state line="4" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
               <folding />
             </state>
           </provider>
@@ -115,14 +126,14 @@
         <option value="$PROJECT_DIR$/tests/1.html" />
         <option value="$PROJECT_DIR$/2.html" />
         <option value="$PROJECT_DIR$/tests/Calculator.js" />
-        <option value="$PROJECT_DIR$/main.html" />
+        <option value="$PROJECT_DIR$/css/form.css" />
+        <option value="$PROJECT_DIR$/tests/Data_render.js" />
         <option value="$PROJECT_DIR$/exp.report.html" />
-        <option value="$PROJECT_DIR$/tests/Data_list.js" />
         <option value="$PROJECT_DIR$/rf.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
-        <option value="$PROJECT_DIR$/css/form.css" />
+        <option value="$PROJECT_DIR$/tests/Data_list.js" />
         <option value="$PROJECT_DIR$/RFDeduct.html" />
-        <option value="$PROJECT_DIR$/tests/Data_render.js" />
+        <option value="$PROJECT_DIR$/main.html" />
       </list>
     </option>
   </component>
@@ -235,14 +246,6 @@
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
       <method />
     </configuration>
-    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
-      <option name="VMOptions" />
-      <option name="arguments" />
-      <option name="filePath" />
-      <option name="scope" value="ALL" />
-      <option name="testName" />
-      <method />
-    </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -251,6 +254,14 @@
       <option name="saveOutputToFile" value="false" />
       <option name="showConsoleOnStdErr" value="false" />
       <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
       <method />
     </configuration>
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
@@ -377,28 +388,32 @@
       <created>1383151174389</created>
       <updated>1383151174389</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="hidden">
+      <created>1383162763081</created>
+      <updated>1383162763081</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="62" y="22" width="1218" height="778" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.06880734" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24958402" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26518884" sideWeight="0.9648609" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16666667" sideWeight="0.9648609" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41590214" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.03513909" sideWeight="0.500821" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03513909" sideWeight="0.500821" order="11" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.03513909" sideWeight="0.49917898" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03513909" sideWeight="0.49917898" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32978722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -412,16 +427,16 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41590214" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.06295754" sideWeight="0.500821" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.06295754" sideWeight="0.49917898" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03513909" sideWeight="0.500821" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.03513909" sideWeight="0.49917898" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24958402" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26518884" sideWeight="0.9370425" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26518884" sideWeight="0.9648609" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -439,29 +454,23 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="5" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/tests/2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="36" selection-start="4425" selection-end="4425" vertical-scroll-proportion="-15.125" vertical-offset="1767" max-vertical-offset="2355">
-          <folding />
-        </state>
+        <state line="142" column="36" selection-start="4425" selection-end="4425" vertical-scroll-proportion="-15.125" vertical-offset="1767" max-vertical-offset="2355" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/sample.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="0" selection-start="4417" selection-end="4417" vertical-scroll-proportion="-50.0" vertical-offset="1245" max-vertical-offset="2670">
-          <folding />
-        </state>
+        <state line="163" column="0" selection-start="4417" selection-end="4417" vertical-scroll-proportion="-50.0" vertical-offset="1245" max-vertical-offset="2670" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/1.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="619" selection-end="619" vertical-scroll-proportion="-3.25" vertical-offset="222" max-vertical-offset="810">
-          <folding />
-        </state>
+        <state line="20" column="0" selection-start="619" selection-end="619" vertical-scroll-proportion="-3.25" vertical-offset="222" max-vertical-offset="810" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/jquery.base64.js">
@@ -481,70 +490,66 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Calculator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.29411766" vertical-offset="0" max-vertical-offset="612">
-          <folding />
-        </state>
+        <state line="14" column="0" selection-start="388" selection-end="388" vertical-scroll-proportion="0.29411766" vertical-offset="0" max-vertical-offset="612" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/projectFilesBackup/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-12.247079" vertical-offset="7336" max-vertical-offset="7935">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-12.247079" vertical-offset="7336" max-vertical-offset="7935" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/form.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="65" selection-end="65" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="555">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/exp.report.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="65" selection-start="2053" selection-end="2053" vertical-scroll-proportion="0.37878788" vertical-offset="420" max-vertical-offset="1635">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="9" selection-start="389" selection-end="389" vertical-scroll-proportion="0.27182865" vertical-offset="0" max-vertical-offset="607">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/form.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="1" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="465">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="58" column="1" selection-start="823" selection-end="823" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1440">
+        <state line="26" column="44" selection-start="1077" selection-end="1077" vertical-scroll-proportion="0.61806655" vertical-offset="0" max-vertical-offset="1575">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/rf.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="141" column="10" selection-start="6112" selection-end="6132" vertical-scroll-proportion="-11.0" vertical-offset="1851" max-vertical-offset="2445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RFDeduct.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="18" selection-start="8753" selection-end="8753" vertical-scroll-proportion="-12.875" vertical-offset="2181" max-vertical-offset="2775">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/Data_list.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="20" selection-start="1478" selection-end="1478" vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="4290">
+        <state line="83" column="41" selection-start="5060" selection-end="5060" vertical-scroll-proportion="-51.875" vertical-offset="0" max-vertical-offset="2730">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/Data_render.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="8" selection-start="3110" selection-end="3110" vertical-scroll-proportion="2.1844661" vertical-offset="0" max-vertical-offset="2400">
+        <state line="56" column="3" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="2400">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Data_list.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="273" column="103" selection-start="16829" selection-end="16829" vertical-scroll-proportion="0.0" vertical-offset="3468" max-vertical-offset="4350">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RFDeduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="161" column="586" selection-start="7731" selection-end="7731" vertical-scroll-proportion="-14.5" vertical-offset="2067" max-vertical-offset="3060">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="16" selection-start="1002" selection-end="1002" vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="1695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="12" selection-start="827" selection-end="827" vertical-scroll-proportion="0.57052296" vertical-offset="0" max-vertical-offset="631">
           <folding />
         </state>
       </provider>

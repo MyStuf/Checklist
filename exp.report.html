@@ -10,36 +10,32 @@
     <title>TE audit</title>
 </head>
 <body>
-    <h1>Авансовый отчет</h1>
+    <h1>Проверка формы № АО-1</h1>
     <br/>
     <br/>
 
-    <h3>Авансовый отчет </h3> - отчет о расходах подотчетных лиц организации.
-        - Формируется в T&E Oasis Application после занесения всех понесенных расходов.<br/>
-        - Дата создания авансового отчета должны быть после окончания командировки.<br/>
-        - Авансовый отчет подписан держателем Центра затрат (Cost Center), в соответствии с Матрицей доверенностей T&E (необходимо сверить лимиты на расходы).<br/>
-        - На втором листе авансового отчета должна быть подпись сотрудника.<br/>
-        - Сумма расходов по авансовому отчету на первом и втором листах совпадает
+    <u>Авансовый отчет (форма № АО-1)</u> - отчет о расходах подотчетных лиц организации.</br>
+    Формируется в T&E Oasis Application после занесения всех понесенных расходов.
 
-    <div id="data" class="block"> </div>
+    <div id="data" class="block"><b><u>Условия к заполнению:</u></b> </div>
 
     <div class="hidden block" id="versionReport">
         <h3><label for="DDTarget">Выберете вид авансового отчета:</label></h3>
         <select id="DDTarget">
            <option value=""></option>
-           <option value="hoz">Хоз расходы</option>
+           <option value="hoz">Хозяйственные расходы</option>
            <option value="marketing">Маркетинговые расходы</option>
            <option value="kom">Командировочне расходы</option>
         </select>
     <button id="buttonTarget" disabled="disabled">Select</button>
     </div>
     <div id="action2" class="hidden block">
-        <h3><label for="DDCountry">Выберите направление:</label></h3>
+        <h3><label for="DDCountry">Выберите место командирования:</label></h3>
             <select id="DDCountry">
                 <option value=""></option>
-                <option value="rf">РФ</option>
+                <option value="rf">Россия</option>
                 <option value="cis">СНГ</option>
-                <option value="foreing">Заграница</option>
+                <option value="foreing">Другие страны</option>
             </select>
         <button id="button2Target" value="Select">Select</button>
     </div>
