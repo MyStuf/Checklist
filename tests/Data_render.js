@@ -124,7 +124,7 @@ Anna.FormRender = {
     var theButton = container.find("button");
     theButton.text(renderFormData.buttonName);
 
-    var resultFunction = function() {
+      var resultFunction = function() {
       return theSelect.val();
     };
 
@@ -136,6 +136,8 @@ Anna.FormRender = {
     resultFunction.nextClick = function(handler) {
       container.find("button").click(handler);
     };
+
+
 
     $('html, body').animate({
       scrollTop: container.offset().top

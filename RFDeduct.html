@@ -27,8 +27,8 @@
     <br/>
     <h2><span class="place1"></span></h2>
 <br/>
-    При несоответствия суммы суточных, включенной в отчет, расчитанной норме суточных авансовый отчет должен быть уменьшен.<br/>
-    Бухгалтер пишет запрос сотруднику об уменьшении суммы авансового отчета. Отчет не может быть проведен без уменьшения, подтверждения сотрудника об уменьшении и бухгалтерской справки.
+    <p>При несоответствия суммы суточных, включенной в отчет, расчитанной норме суточных авансовый отчет должен быть уменьшен.<br/>
+    Бухгалтер пишет запрос сотруднику об уменьшении суммы авансового отчета. Отчет не может быть проведен без уменьшения, подтверждения сотрудника об уменьшении и бухгалтерской справки.</p>
 </div>
 <div id="result01" class="hidden">
     <br/>
@@ -51,6 +51,13 @@
 <div id="tickets" class="hidden block"></div>
 <div id="accomodation" class="hidden block"></div>
 <div id="clone1"></div>
+<div id="button111" hidden="hide">
+    <button id="theEnd" value="theEnd" name="theEnd">The End</button>
+</div>
+<div id="no1" class="hidden block">
+    <h3>    Отчет может быть проведен согласно результатам полученным ниже</h3>
+
+</div>
 <a href="#" class="test">Test</a>
 <div id="clone2"></div>
 
@@ -59,7 +66,6 @@
     $("#button").hide();
     $("#result").hide();
     $("#cal").ForceNumericOnly();
-
         $("#cal").keyup(function(event) {
         if (event.keyCode == 13 || event.keyCode == 10) {
             $("#text").submit();
@@ -100,12 +106,20 @@
 
         $("#choose01").click(function(){
             $("#no").show();
+            $("#choose1").attr("disabled", "disabled");
         });
 
         $("#choose1").click(function(){
+          $("#button111").show();
+           $("#choose01").attr("disabled", "disabled");
           $(this).attr("disabled", "disabled");
           ///вот тут мы показываем выбиралку выкидуху
           renderCheckboxSection($("div#tipeVer"));
+
+        });
+
+        $("#theEnd").click(function(){
+           $("#no1").show();
         });
 
     $("div.hidden").hide();
